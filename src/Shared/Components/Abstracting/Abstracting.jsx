@@ -74,7 +74,7 @@ function Abstracting() {
                             <h1 className=" text-center text-[#269C52] rounded-full  font-semibold  lg:text-2xl   text-lg ">
                                 New Paper Submission
                             </h1>
-                         </div>
+                        </div>
                         <div className='grid lg:grid-cols-1 md:gap-4  gap-4 items-center'>
                             {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6  mx-auto  ">
                                 <div className="bg-white md:p-5 p-3 ">
@@ -104,7 +104,7 @@ function Abstracting() {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto">
                                 {/* Submission Guidelines */}
                                 <div className="bg-gradient-to-br from-white to-gray-50 border border-gray-200 shadow-sm rounded-xl p-5">
-                                    <h3 className="text-xl font-bold text-[#14AE5C] mb-4 flex items-center gap-2">
+                                    <h3 className="md:text-xl font-bold text-[#14AE5C] mb-4 flex items-center gap-2">
                                         <i className="fi fi-bs-check flex items-center"></i>
                                         Submission Guidelines
                                     </h3>
@@ -140,7 +140,7 @@ function Abstracting() {
                                 </div>
                                 {/* Important Notes */}
                                 <div className="bg-gradient-to-br from-white to-gray-50 border border-gray-200 shadow-sm rounded-xl p-5">
-                                    <h3 className="text-xl font-bold text-[#14AE5C] mb-4 flex items-center gap-2">
+                                    <h3 className="md:text-xl font-bold text-[#14AE5C] mb-4 flex items-center gap-2">
                                         <i className="fi fi-ts-octagon-exclamation flex items-center"></i>
                                         Important Notes
                                     </h3>

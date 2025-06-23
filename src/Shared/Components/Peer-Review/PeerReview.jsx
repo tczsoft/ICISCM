@@ -6,7 +6,7 @@ function PeerReview() {
     return (
         <>
             <section className="flex flex-col md:gap-5 gap-3 max-w-[90rem] py-5 md:py-10  mx-auto md:px-5 px-3">
-                <h1 className=" mx-auto font-semibold lg:text-2xl text-xl  text-[#269C52]">
+                <h1 className=" mx-auto font-semibold lg:text-2xl text-lg  text-[#269C52]">
                     Conference Tracks
                 </h1>
                 <div className="  grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:px-4 max-w-7xl mx-auto">

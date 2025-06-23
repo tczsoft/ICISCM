@@ -38,13 +38,13 @@ function Publication() {
                             },
                         ].map((item, index) => (
                             <div key={index} className="  border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition duration-300">
-                                <p className="text-[#56AE58] text-xl font-semibold mb-2">{item.date}</p>
-                                <p className="text-gray-700 text-sm">{item.event}</p>
+                                <p className="text-[#56AE58] md:text-xl text-base font-semibold mb-2">{item.date}</p>
+                                <p className="text-gray-700 md:text-base text-sm">{item.event}</p>
                             </div>
                         ))}
                     </div>
                 </div>
-                <div className=''>
+                {/* <div className=''>
                     <h1 className="text-center text-[#269C52]  font-semibold lg:text-2xl text-lg md:mb-5 mb-3">
                         Registration Details
                     </h1>
@@ -73,7 +73,52 @@ function Publication() {
                             </div>
                         </div>
                     </div>
+                </div> */}
+                <div className=''>
+                    <h1 className="text-center text-[#269C52] font-semibold lg:text-2xl text-lg md:mb-5 mb-3">
+                        Registration Details
+                    </h1>
+                    <div className="max-w-[80rem] mx-auto border border-gray-200 rounded-xl shadow-md md:p-6 p-3 bg-white">
+                        <h2 className="text-lg font-semibold text-gray-800 mb-4 border-b pb-2">Bank Account Details</h2>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-700 mb-4">
+                            <div>
+                                <p className="font-medium text-gray-600">Account Name</p>
+                                <p className="text-gray-900">XXXXXXXX</p>
+                            </div>
+                            <div>
+                                <p className="font-medium text-gray-600">Account Number</p>
+                                <p className="text-gray-900">XXXXXXXX</p>
+                            </div>
+                            <div>
+                                <p className="font-medium text-gray-600">Branch</p>
+                                <p className="text-gray-900">XXXXXXXX</p>
+                            </div>
+                            <div>
+                                <p className="font-medium text-gray-600">IFSC Code</p>
+                                <p className="text-gray-900">XXXXXXXX</p>
+                            </div>
+                            <div>
+                                <p className="font-medium text-gray-600">MICR</p>
+                                <p className="text-gray-900">XXXXXXXX</p>
+                            </div>
+                        </div>
+                        {/* Payment Instructions */}
+                        <div className="text-sm text-gray-800 space-y-3">
+                            <p className="font-semibold   text-gray-900 border-t pt-4 text-lg">Payment Instructions:</p>
+                            <ul className="list-disc list-inside space-y-2 md:text-base text-sm">
+                                <li>Registration fee is payable only after your article is accepted.</li>
+                                <li>Payment options: <span className="font-medium">Online Transfer (NEFT / IMPS)</span> or <span className="font-medium">Cash Deposit</span>.</li>
+                                <li>
+                                    After payment, send proof (<span className="italic">Screenshot / Reference Number / Transaction ID / Counter Slip</span>)
+                                    along with your Paper ID.
+                                </li>
+                                <li>At least <span className="font-medium">one author</span> of each accepted paper must register and attend the conference.</li>
+                                <li>Selected paper abstracts will be published in the conference proceedings with <span className="font-medium">ISBN</span>.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+
             </section>
             <LastSection />
 
