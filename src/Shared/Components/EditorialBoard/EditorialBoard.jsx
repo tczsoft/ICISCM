@@ -1,6 +1,4 @@
-import React from 'react'
 import EditTeam from './EditTeam'
-import { Link } from 'react-router-dom';
 import LastSection from '../Last/LastSection';
 
 function EditorialBoard({ position, Name, location }) {

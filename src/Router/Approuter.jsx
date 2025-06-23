@@ -34,8 +34,7 @@ function Approuter() {
             <Route path="/paper-submission" element={<AbstractingPage />} />
             <Route path="/conference-tracks" element={<PeerPage />} />
             <Route path="/key-dates" element={<PublicationPage />} />
-            {/* <Route path="/about" element={<Abouts />} />
-            <Route path="/author-guidelines" element={<GuidelinePage />} />
+            {/* <Route path="/author-guidelines" element={<GuidelinePage />} />
             <Route path="/article-processing" element={<ArticlePage />} />
             <Route path="/plagiarism" element={<PlagiarismPage />} />
             <Route path="/malpractice" element={<MalPracticePage />} />
