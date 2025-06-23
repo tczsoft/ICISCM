@@ -26,7 +26,6 @@ function Contct() {
                                 </div>
                             </div>
                         </div>
-
                     </section>
                 </div>
             </section>
