@@ -8,7 +8,7 @@ function AimandScope() {
             <section className="flex flex-col  md:gap-10 gap-5  max-w-[80rem]  md:py-10 py-5 mx-auto md:px-5 px-3 items-center justify-center">
                 <section className="grid md:grid-cols-2 grid-cols-1 md:gap-5 gap-3 items-start">
                     <div className="rounded-xl overflow-hidden">
-                        <img className="h-64 sm:h-80 w-full object-cover" rel="preload" src="/assets/Images/Illustration.jpg" alt="Conference Visual" />
+                        <img className="h-64 sm:h-80 w-full object-cover" rel="preload" src="/assets/Images/illus.jpg" alt="Conference Visual" />
                     </div>
                     <div className='flex flex-col md:gap-5 gap-3'>
                         <h1 className=" text-center font-semibold text-[#269C52] lg:text-2xl text-lg">
