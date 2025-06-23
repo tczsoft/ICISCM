@@ -39,13 +39,12 @@ const Footer = () => {
               </div>
             </div>
             <div className="border-t border-white/20 mt-8 pt-4 text-center text-sm text-gray-200">
-              © {new Date().getFullYear()} <Link to='/'>ICBDCC.</Link> All rights reserved.
+              © {new Date().getFullYear()} <Link to='/'>ICISCM.</Link> All rights reserved.
             </div>
           </div>
         </div>
       </footer>
     </>
-
   );
 };
 export default Footer;

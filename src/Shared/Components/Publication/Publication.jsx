@@ -10,7 +10,7 @@ function Publication() {
                     <h1 className=" text-center text-[#269C52] font-semibold lg:text-2xl text-lg md:mb-10 mb-5">
                         Key Dates
                     </h1>
-                    <div className="  grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 max-w-7xl mx-auto">
+                    <div className="  grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:px-4 max-w-7xl mx-auto">
                         {[
                             {
                                 date: "22-07-2025",
