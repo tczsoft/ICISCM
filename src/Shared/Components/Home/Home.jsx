@@ -91,9 +91,9 @@ export const Home = () => {
         <div className="absolute top-0 left-0 h-full w-full bg-[#269C53] z-0 clip-md"></div>
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 h-full max-w-[100rem] gap-10 lg:py-0 py-10 mx-auto items-center px-4">
           <div className="flex justify-center items-center ">
-            <img src="/assets/Images/pik.png" alt="Conference" className="rounded-xl  mx-auto lg:w-full w-96" />
+            <img src="/assets/Images/pik.png" alt="Conference" rel="preload" className="rounded-xl  mx-auto lg:w-full w-96" />
           </div>
-          <div className=" lg:ml-auto mx-auto flex flex-col gap-6">
+            <div className=" lg:ml-auto mx-auto flex flex-col gap-6">
             <h2 className="lg:text-[#269C53] md:text-2xl font-bold text-center   text-white">ICISCM</h2>
             <h1 className="text-2xl xl:text-5xl lg:text-3xl font-bold leading-snug text-center  lg:text-black text-white">
               International Conference on  Intelligent Systems and  Computational Methods

@@ -26,7 +26,7 @@ function About() {
             </div>
           </div>
           <div className="rounded-xl overflow-hidden">
-            <img className="h-64 sm:h-80 w-full object-cover" src="/assets/Images/footer.jpg" alt="Conference Visual" />
+            <img className="h-64 sm:h-80 w-full object-cover" rel="preload" src="/assets/Images/footer.jpg" alt="Conference Visual" />
           </div>
         </section>
         <section className="">
