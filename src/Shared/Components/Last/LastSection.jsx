@@ -29,7 +29,7 @@ function LastSection() {
                         </div>
                         <div className='w-fit mx-auto'>
                             <Link to="/paper-submission">
-                                <div className="bg-white p-4 w-fit text-[#56AE58] px-6 rounded-md mx-auto cursor-pointer font-bold hover:scale-105 duration-300">
+                                <div className="bg-white p-4 w-fit text-[#56AE58] px-6 rounded-md mx-auto cursor-pointer font-bold hover:scale-105 duration-300 md:text-base text-sm">
                                     Register Now
                                 </div>
                             </Link>
