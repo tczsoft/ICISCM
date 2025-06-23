@@ -1,15 +1,13 @@
-import React from 'react'
 import Edit from './Edit';
-import { Link } from 'react-router-dom';
 import LastSection from '../Last/LastSection';
 
-function Issues({ position, Name, location }) {
+function Issues({ }) {
     const Tech = [
-        { Name: 'Archana Chaluvadi', position: 'MASSMUTUAL', location: 'BOSTON,USA' },
-        { Name: 'Basava Ramanjaneyulu Gudivaka', position: 'Raas Infotek', location: 'Delaware,USA' },
-        { Name: 'Jyothi Bobba', position: 'Lead IT Corporation', location: 'Illinois, USA' },
-        { Name: 'Rahul Jadon', position: 'CarGurus Inc', location: 'Massachusetts,USA' },
-        { Name: 'Dharma Teja Valivarthi', position: 'Tek Leaders', location: 'Texas, USA' },
+        { Name: 'Sunil Kumar Alavilli', position: 'Sephora', location: 'California, USA' },
+        { Name: 'Deepa Bhadana', position: 'CCS Univeristy', location: 'UP, India' },
+        { Name: 'Nagendra Kumar Musham', position: 'Celer Systems Inc', location: 'California, USA' },
+        { Name: 'Xi Zhang', position: 'Lecturer(University of KU Leuven)', location: 'Belgium' },
+        { Name: 'Rajya Lakshmi Gudivaka', position: 'Wipro', location: 'Hyderabad, India' },
     ];
     return (
         <>
