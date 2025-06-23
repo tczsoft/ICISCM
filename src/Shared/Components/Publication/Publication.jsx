@@ -38,7 +38,10 @@ function Publication() {
                             },
                         ].map((item, index) => (
                             <div key={index} className="  border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition duration-300">
-                                <p className="text-[#56AE58] md:text-xl text-base font-semibold mb-2">{item.date}</p>
+                                <div className='flex items-center gap-3  mb-2'>
+                                    <i class="fi fi-sr-calendar-clock flex items-center text-[#56AE58]"></i>
+                                    <p className=" md:text-xl text-base font-semibold">{item.date}</p>
+                                </div>
                                 <p className="text-gray-700 md:text-base text-sm">{item.event}</p>
                             </div>
                         ))}
@@ -78,7 +81,7 @@ function Publication() {
                     <h1 className="text-center text-[#269C52] font-semibold lg:text-2xl text-lg md:mb-5 mb-3">
                         Registration Details
                     </h1>
-                    <div className="max-w-[80rem] mx-auto border border-gray-200 rounded-xl shadow-md md:p-6 p-3 bg-white">
+                    <div className="max-w-[78rem] mx-auto border border-gray-200 rounded-xl shadow-md md:p-6 p-3 bg-white">
                         <h2 className="text-lg font-semibold text-gray-800 mb-4 border-b pb-2">Bank Account Details</h2>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-700 mb-4">
                             <div>
