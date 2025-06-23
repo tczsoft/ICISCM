@@ -160,7 +160,7 @@ export const Home = () => {
         </section>
         <section className="  max-w-[100rem]  mx-auto md:px-5 px-3 ">
           <div className="  bg-[#A6D8A7] md:p-10 p-5 rounded-3xl shadow-xl  flex flex-col md:gap-5 gap-3">
-            <h1 className="text-center mx-auto font-bold lg:text-2xl text-lg ">
+            <h1 className="text-center mx-auto font-semibold lg:text-2xl text-lg ">
               Key Dates
             </h1>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-10 gap-5">
