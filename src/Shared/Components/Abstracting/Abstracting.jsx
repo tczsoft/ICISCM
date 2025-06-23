@@ -262,7 +262,6 @@ function Abstracting() {
                     </div>
                 </div>
             </section>
-
             <Contct />
         </>
     )
