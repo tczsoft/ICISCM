@@ -207,19 +207,22 @@ function Abstracting() {
                                                         onChange={handleChange}
                                                         required
                                                         className="shadow-sm bg-white border rounded-md border-gray-200 text-black text-sm focus:ring-primary-500 focus:border-primary-500 block w-full p-2 mt-4"                                                >
-                                                        <option value=""  >Select Category</option>
-                                                        <option value="BigData">Big Data Analytics</option>
-                                                        <option value="CloudComputing">Cloud Computing</option>
-                                                        <option value="EdgeComputing">Edge & Fog Computing</option>
-                                                        <option value="IoT">Internet of Things (IoT)</option>
-                                                        <option value="AI">Artificial Intelligence</option>
-                                                        <option value="ML">Machine Learning</option>
-                                                        <option value="DataScience">Data Science</option>
-                                                        <option value="CyberSecurity">Cyber Security in Cloud</option>
-                                                        <option value="Blockchain">Blockchain for Data Security</option>
-                                                        <option value="DevOps">DevOps and Cloud Infrastructure</option>
-                                                        <option value="5G">5G and Cloud Integration</option>
-                                                        <option value="QuantumComputing">Quantum Computing in Cloud</option>
+                                                        <option value="">Select Track</option>
+                                                        <option value="IntelligentSystems">Intelligent Systems and Applications</option>
+                                                        <option value="ComputationalMethods">Computational Intelligence & Soft Computing</option>
+                                                        <option value="AI">Artificial Intelligence and Knowledge Engineering</option>
+                                                        <option value="ML">Machine Learning and Deep Learning</option>
+                                                        <option value="DataScience">Data Science and Intelligent Decision Support</option>
+                                                        <option value="BigData">Big Data Analytics and Processing</option>
+                                                        <option value="CyberSecurity">Cybersecurity and Information Assurance</option>
+                                                        <option value="IoT">Internet of Things (IoT) and Sensor Networks</option>
+                                                        <option value="CloudEdge">Cloud, Edge, and Fog Computing</option>
+                                                        <option value="RoboticsAutomation">Robotics, Control Systems, and Automation</option>
+                                                        <option value="NaturalLanguageProcessing">Natural Language Processing and Chatbots</option>
+                                                        <option value="ComputerVision">Computer Vision and Image Processing</option>
+                                                        <option value="Bioinformatics">Bioinformatics and Computational Biology</option>
+                                                        <option value="QuantumComputing">Quantum Computing and Emerging Technologies</option>
+                                                        <option value="SmartSystems">Smart Cities, Smart Grid, and Intelligent Environments</option>
                                                     </select>
                                                 </div>
                                                 <div className="md:col-span-2 mt-5">
