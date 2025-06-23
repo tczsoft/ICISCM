@@ -27,9 +27,7 @@ function EditorialBoard({ position, Name, location }) {
                     ))}
                 </div>
             </section>
-
             <LastSection />
-
         </>
     )
 }
