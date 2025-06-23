@@ -7,10 +7,10 @@ function Publication() {
         <>
             <section className="flex flex-col md:gap-10 gap-5   max-w-[90rem] py-5 md:py-10  mx-auto md:px-5 px-3">
                 <div className=''>
-                    <h1 className=" text-center text-[#269C52] font-semibold lg:text-2xl text-lg md:mb-5 mb-3">
+                    <h1 className="text-center text-[#269C52] font-semibold lg:text-2xl text-lg md:mb-5 mb-3">
                         Key Dates
                     </h1>
-                    <div className="  grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:px-4 max-w-7xl mx-auto">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:px-4 max-w-7xl mx-auto">
                         {[
                             {
                                 date: "22-07-2025",
@@ -47,36 +47,6 @@ function Publication() {
                         ))}
                     </div>
                 </div>
-                {/* <div className=''>
-                    <h1 className="text-center text-[#269C52]  font-semibold lg:text-2xl text-lg md:mb-5 mb-3">
-                        Registration Details
-                    </h1>
-                    <div className="max-w-xl mx-auto border border-gray-200 rounded-xl shadow-md md:p-6 p-3 bg-white">
-                        <h2 className="text-lg font-semibold text-gray-800 mb-4 border-b pb-2">Bank Account Details</h2>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-700">
-                            <div>
-                                <p className="font-medium text-gray-600">Account Name</p>
-                                <p className="text-gray-900">XXXXXXXX</p>
-                            </div>
-                            <div>
-                                <p className="font-medium text-gray-600">Account Number</p>
-                                <p className="text-gray-900">XXXXXXXX</p>
-                            </div>
-                            <div>
-                                <p className="font-medium text-gray-600">Branch</p>
-                                <p className="text-gray-900">XXXXXXXX</p>
-                            </div>
-                            <div>
-                                <p className="font-medium text-gray-600">IFSC Code</p>
-                                <p className="text-gray-900">XXXXXXXX</p>
-                            </div>
-                            <div>
-                                <p className="font-medium text-gray-600">MICR</p>
-                                <p className="text-gray-900">XXXXXXXX</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
                 <div className=''>
                     <h1 className="text-center text-[#269C52] font-semibold lg:text-2xl text-lg md:mb-5 mb-3">
                         Registration Details
