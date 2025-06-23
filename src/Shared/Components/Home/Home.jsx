@@ -30,7 +30,6 @@ export const Home = () => {
     },
   ];
 
-
   const invitees = [
     {
       location: 'location',
@@ -52,8 +51,6 @@ export const Home = () => {
       Name: 'John Doe',
       Position: 'Chairperson',
     },
-
-
   ];
 
   const technical = [
@@ -77,8 +74,6 @@ export const Home = () => {
       Name: 'John Doe',
       Position: 'Chairperson',
     },
-
-
   ];
 
   const date = [
