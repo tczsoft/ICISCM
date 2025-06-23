@@ -13,7 +13,7 @@ function EditorialBoard({ position, Name, location }) {
     ];
     return (
         <>
-            <section className="flex flex-col md:gap-10 gap-5 max-w-[90rem]  md:px-5 px-3 mx-auto  md:py-20 py-10" >
+            <section className="flex flex-col md:gap-5 gap-3 max-w-[90rem]  md:px-5 px-3 mx-auto  md:py-10 py-5" >
                 <h1 className="text-center text-[#269C52] font-semibold lg:text-2xl text-lg">
                     Organizing Committee
                 </h1>
@@ -23,7 +23,7 @@ function EditorialBoard({ position, Name, location }) {
                     ))}
                 </div>
             </section>
-          
+
             <LastSection />
 
         </>

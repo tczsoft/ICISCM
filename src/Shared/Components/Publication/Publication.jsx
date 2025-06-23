@@ -5,9 +5,9 @@ import LastSection from '../Last/LastSection'
 function Publication() {
     return (
         <>
-            <section className="flex flex-col md:gap-20 gap-10   max-w-[90rem] py-10 md:py-20  mx-auto md:px-5 px-3">
+            <section className="flex flex-col md:gap-10 gap-5   max-w-[90rem] py-5 md:py-10  mx-auto md:px-5 px-3">
                 <div className=''>
-                    <h1 className=" text-center text-[#269C52] font-semibold lg:text-2xl text-lg md:mb-10 mb-5">
+                    <h1 className=" text-center text-[#269C52] font-semibold lg:text-2xl text-lg md:mb-5 mb-3">
                         Key Dates
                     </h1>
                     <div className="  grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:px-4 max-w-7xl mx-auto">
@@ -45,7 +45,7 @@ function Publication() {
                     </div>
                 </div>
                 <div className=''>
-                    <h1 className="text-center text-[#269C52]  font-semibold lg:text-2xl text-lg md:mb-10 mb-5">
+                    <h1 className="text-center text-[#269C52]  font-semibold lg:text-2xl text-lg md:mb-5 mb-3">
                         Registration Details
                     </h1>
                     <div className="max-w-xl mx-auto border border-gray-200 rounded-xl shadow-md md:p-6 p-3 bg-white">

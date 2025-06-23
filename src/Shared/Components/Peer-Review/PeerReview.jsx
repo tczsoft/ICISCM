@@ -5,7 +5,7 @@ import LastSection from '../Last/LastSection'
 function PeerReview() {
     return (
         <>
-            <section className="flex flex-col md:gap-10 gap-5 max-w-[90rem] py-10 md:py-20  mx-auto md:px-5 px-3">
+            <section className="flex flex-col md:gap-5 gap-3 max-w-[90rem] py-5 md:py-10  mx-auto md:px-5 px-3">
                 <h1 className=" mx-auto font-semibold lg:text-2xl text-xl  text-[#269C52]">
                     Conference Tracks
                 </h1>

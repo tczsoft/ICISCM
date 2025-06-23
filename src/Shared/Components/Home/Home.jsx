@@ -109,17 +109,17 @@ export const Home = () => {
         </div>
       </section>
       <section className="bg-[#A6D8A7]">
-        <section className="max-w-[90rem] pt-10 md:pt-20 mx-auto md:px-5 px-3">
+        <section className="max-w-[90rem] pt-5 md:pt-10 mx-auto md:px-5 px-3">
           <section className="grid md:grid-cols-2 grid-cols-1 md:gap-5 gap-3 items-start">
-            <div className='flex flex-col gap-4'>
-              <h1 className="text-center w-fit mx-auto rounded-full px-6 py-2 font-semibold lg:text-2xl text-lg">
+            <div className='flex flex-col md:gap-4 gap-2'>
+              <h1 className="text-center w-fit mx-auto rounded-full   font-semibold lg:text-2xl text-lg">
                 About the Conference
               </h1>
               <p className="text-justify md:text-base text-sm leading-7">Step into the future of intelligent technologies at the International Conference on Intelligent Systems and Computational Methods (ICISCM).
                 This premier global event unites researchers, academicians, industry experts, and students to explore innovative ideas, emerging trends, and practical applications in intelligent systems and computational techniques. ICISCM serves as a dynamic platform for presenting cutting-edge research, exchanging knowledge, and fostering collaborations that drive advancements in automation, machine learning, optimization, and real-world problem solving through computational intelligence. </p>
             </div>
-            <div className=" flex flex-col gap-4">
-              <h1 className="text-center w-fit mx-auto rounded-full px-6 py-2 font-semibold lg:text-2xl text-lg">
+            <div className=" flex flex-col md:gap-4 gap-2">
+              <h1 className="text-center w-fit mx-auto rounded-full   font-semibold lg:text-2xl text-lg">
                 Scope of Conference
               </h1>
               <p className="text-justify md:text-base text-sm leading-7">

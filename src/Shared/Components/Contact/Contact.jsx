@@ -51,12 +51,12 @@ function Contact() {
 
     return (
         <>
-            <section className="max-w-screen-xl mx-auto w-full px-5 2xl:px-0  py-10 md:py-20 ">
+            <section className="max-w-screen-xl mx-auto w-full px-5 2xl:px-0  py-5 md:py-10 ">
                 <div className="lg:flex md:flex  gap-8 ">
                     <div className="max-w-full w-full ">
                         <div className="lg:max-w-3xl max-w-xl w-full mx-auto  ">
                             <div className="  :bg-gray-900 lg:px-20   md:px-5     ">
-                                <div className=' text-center mx-auto flex justify-center  md:mb-10 mb-5 '>
+                                <div className=' text-center mx-auto flex justify-center  md:mb-5 mb-3 '>
                                     <h1 className="text-center  text-[#269C52]   font-semibold  lg:text-2xl   text-lg ">
                                         Contact Us
                                     </h1>
@@ -94,7 +94,7 @@ function Contact() {
                                             <textarea id="message" name="message" value={formData.message} onChange={handleChange} ngModel rows="4" className="block p-2.5 w-full text-sm shadow-sm border rounded-md border-gray-200  focus:ring-primary-500 focus:border-primary-500   mt-4 " placeholder="Leave a Message..."   ></textarea>
                                         </div>
                                         <div className="text-center md:mt-0 mt-5 ">
-                                            <button type="submit" className="py-3 px-5 text-sm   bg-primary-blue-color  text-center  rounded-md  bg-[#14AE5C]  text-white  cursor-pointer hover:text-primary-blue-color bg-primary-red-color sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300" >
+                                            <button type="submit" className="py-3 px-5 text-sm   bg-primary-blue-color  text-center  rounded-md  bg-[#14AE5C]  font-semibold text-white  cursor-pointer hover:text-primary-blue-color bg-primary-red-color sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300" >
                                                 {status === 'Sending...' ? 'Submitting...' : 'Send message'}
                                             </button>
                                         </div>
