@@ -99,8 +99,8 @@ export const Home = () => {
             <img src="/assets/Images/pik.png" alt="Conference" className="rounded-xl  mx-auto lg:w-full w-96" />
           </div>
           <div className=" lg:ml-auto mx-auto flex flex-col gap-6">
-            <h2 className="lg:text-[#269C53] md:text-2xl font-bold text-center">ICISCM</h2>
-            <h1 className="text-2xl xl:text-5xl lg:text-3xl font-bold leading-snug text-center ">
+            <h2 className="lg:text-[#269C53] md:text-2xl font-bold text-center   text-white">ICISCM</h2>
+            <h1 className="text-2xl xl:text-5xl lg:text-3xl font-bold leading-snug text-center  lg:text-black text-white">
               International Conference on  Intelligent Systems and  Computational Methods
             </h1>
             <div className="text-center">
