@@ -22,7 +22,6 @@ function Abstracting() {
                 e.target.value = ""; // Clear the file input
                 return;
             }
-
             setFormData({ ...formData, [e.target.name]: file });
         } else {
             setFormData({ ...formData, [e.target.name]: e.target.value });
