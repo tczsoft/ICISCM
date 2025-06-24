@@ -8,13 +8,10 @@ const Header = () => {
   const dropdownRef = useRef(null);
   const location = useLocation();
   const isActive = (path) => {
-    // First check for direct path match
     if (location.pathname === path) {
       return true;
     }
-    // Then find the nav item with this path
     const navItem = navLinks.find(link => link.to === path);
-    // If nav item has dropdown, check if current path is in the dropdown
     if (navItem && navItem.dropdown) {
       return navItem.dropdown.some(item => location.pathname === item.to);
     }
@@ -42,7 +39,6 @@ const Header = () => {
           to: "/editorial-board",
           label: "Editorial Board",
         },
-
       ],
     },
     {
@@ -85,7 +81,7 @@ const Header = () => {
     <>
       <section className="bg-primary">
         <div className="max-w-[80rem] mx-auto md:px-5 px-3 md:py-0 py-2 bg-white  border-b-black  border-b">
-          <div className="flex items-center justify-between   lg:gap-0  gap-5  ">
+          <div className="flex items-center justify-between lg:gap-0  gap-5  ">
             <Link to='/'>
               <div className="md:hidden block text-black ">
                 ICISCM
@@ -130,9 +126,9 @@ const Header = () => {
       </div> */}
       <section
         // className={`md:bg-white  md:border-b-4  border-b-[#14AE5C]  ${menuOpen ? " block" : " md:block hidden"}`}
-        className={`  md:border-b-1  border-b-[#14AE5C] fixed top-0 right-0 h-full w-64 z-40 bg-[#56AE58] ${menuOpen ? "translate-x-0 duration-300" : "translate-x-full duration-300"
+        className={`md:border-b-1  border-b-[#14AE5C] fixed top-0 right-0 h-full w-64 z-40 bg-[#56AE58] ${menuOpen ? "translate-x-0 duration-300" : "translate-x-full duration-300"
           } md:block md:relative md:w-auto md:translate-x-0`} >
-        <header className="max-w-[80rem] mx-auto md:px-5 px-2 h-full ">
+        <header className="max-w-[100rem] mx-auto md:px-5 px-2 h-full ">
           <div className="flex md:justify-between justify-center items-center ">
             <Link to='/'>
               {/* <img className='w-40 md:block hidden' src="/assets/Images/ICBDCC.png" alt="" /> */}
@@ -141,22 +137,20 @@ const Header = () => {
             <nav ref={dropdownRef}>
               <div className={`space-x-1 md:block max-w-[65rem] mx-auto  md:pt-0  pt-20  ${menuOpen ? "flex flex-col space-y-4" : " "}`}>
                 {navLinks.map((link) => (
-                  <div
-                    key={link.to}
-                    className=" inline-block group relative"
+                  <div key={link.to} className=" inline-block group relative"
                     // onMouseEnter={() => handleMouseEnter(link.label)}
                     // onMouseLeave={handleMouseLeave}
                     onMouseEnter={() => window.innerWidth >= 768 && handleMouseEnter(link.label)}
-                    onMouseLeave={() => window.innerWidth >= 768 && handleMouseLeave()}   >
-                    <Link to={link.to} className={`     py-4 flex lg:w-[144px] md:w-[130px] transition-all duration-300 ease-in-out lg:text-base md:text-sm justify-center items-center gap-2 text-white ${isActive(link.to) || hoveredCategory === link.label ? 'md:border-t-0 border-t-[#14AE5C] duration-300 text-[#1B1F3B]' : ''} `}
+                    onMouseLeave={() => window.innerWidth >= 768 && handleMouseLeave()}>
+                    <Link to={link.to} className={`py-4 flex lg:w-[144px] md:w-[130px] transition-all duration-300 ease-in-out lg:text-base md:text-sm justify-center items-center gap-2 text-white ${isActive(link.to) || hoveredCategory === link.label ? 'md:border-t-0 border-t-[#14AE5C] duration-300 text-[#1B1F3B]' : ''} `}
                       onClick={(e) => { if (link.dropdown) { e.preventDefault(); setHoveredCategory((prev) => (prev === link.label ? null : link.label)); } else { setMenuOpen(false); } }}   >
                       {link.label}
                       {link.dropdown && (
-                        <i className={`fi fi-sr-angle-circle-down flex items-center  transition-all duration-300 ease-in-out  rounded-full text-white] ${isActive(link.to) || hoveredCategory === link.label ? 'bg-[#14AE5C] text-white rotate-180 duration-100' : ' '} `}></i>
+                        <i className={`fi fi-sr-angle-circle-down flex items-center  transition-all duration-300 ease-in-out  rounded-full text-white ${isActive(link.to) || hoveredCategory === link.label ? 'bg-[#14AE5C] text-white rotate-180 duration-100' : ' '} `}></i>
                       )}
                     </Link>
                     {hoveredCategory === link.label && link.dropdown && (
-                      <div className="md:absolute left-0 top-full md:w-[260px]  rounded-lg  md:bg-[#56AE58] bg-white  transition-all duration-300 ease-in-out opacity-100 scale-y-100 origin-top  grid md:grid-cols-1   md:p-3 z-10">
+                      <div className="md:absolute left-0 top-full md:w-[260px] rounded-lg  md:bg-[#56AE58] bg-white  transition-all duration-300 ease-in-out opacity-100 scale-y-100 origin-top  grid md:grid-cols-1 md:p-3 z-10">
                         {link.dropdown.map((dropdownlink) => (
                           <Link key={dropdownlink.to} to={dropdownlink.to} className="block md:px-4 px-4 py-2 md:text-white md:text-start text-center  text-[#1B1F3B]" onClick={() => { setHoveredCategory(null); setMenuOpen(false); }} >
                             {dropdownlink.label}
