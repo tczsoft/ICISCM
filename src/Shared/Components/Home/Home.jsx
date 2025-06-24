@@ -129,8 +129,8 @@ export const Home = () => {
           </section>
           <div className="flex justify-center mt-10 ">
             <div className="bg-white w-fit p-10  flex items-center gap-4 rounded-t-xl relative top-2 overflow-hidden">
-              <i className="fi fi-ss-earth-americas flex items-center text-3xl"></i>
-              <p className="md:text-xl">Location : <br />
+              <i className="fi fi-ss-earth-americas flex items-center text-3xl text-[#2457c5]"></i>
+              <p className="md:text-xl">Location :<br />
                 Chennai, India</p>
               <div className="absolute top-0 right-0 w-20 h-20 bg-[#269C52] rounded-bl-full transform translate-x-6 -translate-y-6 -hover:scale-110 transition-transform duration-500"></div>
             </div>
