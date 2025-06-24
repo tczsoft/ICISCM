@@ -142,7 +142,7 @@ export const Home = () => {
           <h1 className=" text-center font-semibold lg:text-2xl text-lg">
             Key Invitees
           </h1>
-          <div className="grid lg:grid-cols-2   grid-cols-1 md:gap-10 gap-5">
+          <div className="grid md:grid-cols-2   grid-cols-1 md:gap-10 gap-5">
             {invitees.map((member, index) => (
               <Invitees key={index} Name={member.Name} Position={member.Position} location={member.location} dataAos="flip-left" />
             ))}
@@ -152,7 +152,7 @@ export const Home = () => {
           <h1 className=" text-center font-semibold lg:text-2xl text-lg">
             Technical Program Committee
           </h1>
-          <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-10 gap-5">
+          <div className="grid 2xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-10 gap-5">
             {technical.map((member, index) => (
               <Technical key={index} Name={member.Name} Position={member.Position} location={member.location} dataAos="flip-left" />
             ))}
