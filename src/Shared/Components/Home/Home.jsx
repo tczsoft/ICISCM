@@ -100,7 +100,7 @@ export const Home = () => {
             </h1>
             <div className="text-center">
               <Link to="/paper-submission">
-                <button className="lg:bg-[#269C53] bg-white lg:text-white  text-[#269C53] px-6 py-2 rounded lg:hover:bg-green-700 transition cursor-pointer">
+                <button className="lg:bg-[#269C53] bg-white lg:text-white font-semibold  text-[#269C53] px-6 py-2 rounded lg:hover:bg-green-700 transition cursor-pointer">
                   Register Now
                 </button>
               </Link>

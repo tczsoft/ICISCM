@@ -249,7 +249,7 @@ function Abstracting() {
                                                 )}
                                                 <div className="text-center mx-auto mt-5  md:col-span-2">
                                                     <button type="submit" disabled={status === 'Sending...'}
-                                                        className="py-3 px-5 text-sm  bg-primary-blue-color  text-center  bg-[#14AE5C] cursor-pointer hover:text-primary-blue-color rounded-md    text-white   bg-primary-red-color sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300    " >
+                                                        className="py-3 px-5 text-sm  bg-primary-blue-color  text-center  bg-[#14AE5C] cursor-pointer font-semibold hover:text-primary-blue-color rounded-md    text-white   bg-primary-red-color sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300    " >
                                                         {status === 'Sending...' ? 'Submitting...' : 'Submit Paper'}
                                                     </button>
                                                 </div>
