@@ -127,11 +127,11 @@ const Header = () => {
       <section
         // className={`md:bg-white  md:border-b-4  border-b-[#14AE5C]  ${menuOpen ? " block" : " md:block hidden"}`}
         className={`md:border-b-1  border-b-[#14AE5C] fixed top-0 right-0 h-full w-64 z-40 bg-[#56AE58] ${menuOpen ? "translate-x-0 duration-300" : "translate-x-full duration-300"} md:block md:relative md:w-auto md:translate-x-0`} >
-        <header className="max-w-[100rem] mx-auto md:px-5 px-2 h-full ">
+        <header className="max-w-[100rem] mx-auto md:px-5 px-2 h-full py-1 ">
           <div className="flex md:justify-between justify-center items-center ">
             <Link to='/'>
-              {/* <img className='w-40 md:block hidden' src="/assets/Images/ICBDCC.png" alt="" /> */}
-              <div className=" font-bold md:block hidden text-white">ICISCM</div>
+              <img className='w-32 md:block hidden h-16 object-contain  ' src="/assets/Images/ICISCM.png" alt="" />
+              {/* <div className=" font-bold md:block hidden text-white">ICISCM</div> */}
             </Link>
             <nav ref={dropdownRef}>
               <div className={`space-x-1 md:block max-w-[65rem] mx-auto  md:pt-0  pt-20  ${menuOpen ? "flex flex-col space-y-4" : ""}`}>
