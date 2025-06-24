@@ -22,7 +22,7 @@ function Contct() {
                             <div className="bg-[#269C53] md:p-10 p-5 w-full h-full transform -skew-x-12 rounded-xl">
                                 <div className="transform skew-x-12 flex flex-col gap-5">
                                     <i className="fi fi-sr-envelope items-center xl:text-5xl md:text-3xl  flex justify-end"></i>
-                                    <p className="xl:text-2xl">xxx@icacsit.com +91 1234567890</p>
+                                    <p className="xl:text-2xl">info.iciscm@gmail.com <br /> +91 1234567890</p>
                                 </div>
                             </div>
                         </div>
