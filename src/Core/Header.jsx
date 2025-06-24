@@ -152,11 +152,11 @@ const Header = () => {
                       onClick={(e) => { if (link.dropdown) { e.preventDefault(); setHoveredCategory((prev) => (prev === link.label ? null : link.label)); } else { setMenuOpen(false); } }}   >
                       {link.label}
                       {link.dropdown && (
-                        <i className={`fi fi-rr-caret-down flex items-center  transition-all duration-300 ease-in-out  rounded-full text-white] ${isActive(link.to) || hoveredCategory === link.label ? 'bg-[#14AE5C] text-white rotate-180 duration-100' : ' '} `}></i>
+                        <i className={`fi fi-sr-angle-circle-down flex items-center  transition-all duration-300 ease-in-out  rounded-full text-white] ${isActive(link.to) || hoveredCategory === link.label ? 'bg-[#14AE5C] text-white rotate-180 duration-100' : ' '} `}></i>
                       )}
                     </Link>
                     {hoveredCategory === link.label && link.dropdown && (
-                      <div className="md:absolute left-0 top-full md:w-[260px]   md:bg-[#56AE58] bg-white  transition-all duration-300 ease-in-out opacity-100 scale-y-100 origin-top  grid md:grid-cols-1   md:p-3 z-10">
+                      <div className="md:absolute left-0 top-full md:w-[260px]  rounded-lg  md:bg-[#56AE58] bg-white  transition-all duration-300 ease-in-out opacity-100 scale-y-100 origin-top  grid md:grid-cols-1   md:p-3 z-10">
                         {link.dropdown.map((dropdownlink) => (
                           <Link key={dropdownlink.to} to={dropdownlink.to} className="block md:px-4 px-4 py-2 md:text-white md:text-start text-center  text-[#1B1F3B]" onClick={() => { setHoveredCategory(null); setMenuOpen(false); }} >
                             {dropdownlink.label}

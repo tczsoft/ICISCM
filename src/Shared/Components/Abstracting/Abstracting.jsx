@@ -68,7 +68,6 @@ function Abstracting() {
             toast.error('An error occurred. Please try again.');
         }
     };
-
     return (
         <>
             <section className="max-w-screen-xl mx-auto w-full px-5 2xl:px-0  py-5 md:py-10 ">
