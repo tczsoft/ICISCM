@@ -15,7 +15,15 @@ function Abstracting() {
 
     const handleChange = (e) => {
         if (e.target.type === 'file') {
-            setFormData({ ...formData, [e.target.name]: e.target.files[0] });
+            const file = e.target.files[0];
+            const maxSize = 10 * 1024 * 1024; // 10 MB in bytes
+            if (file && file.size > maxSize) {
+                alert("File size exceeds 10 MB. Please upload a smaller file.");
+                e.target.value = ""; // Clear the file input
+                return;
+            }
+
+            setFormData({ ...formData, [e.target.name]: file });
         } else {
             setFormData({ ...formData, [e.target.name]: e.target.value });
         }
@@ -227,17 +235,8 @@ function Abstracting() {
                                                 </div>
                                                 <div className="md:col-span-2 mt-5">
                                                     <label className="block mb-2 text-sm text-[#1B1F3B]">Upload Paper</label>
-                                                    {/* <div className="flex flex-col items-center justify-center w-full h-48 border-2 border-dashed border-gray-300 rounded-lg cursor-pointer bg-white hover:border-[#6366f1] transition duration-300">
-                                                    <input type="file"
-                                                        accept=".pdf,.doc,.docx" id="upload-paper" name="paper" className="hidden" onChange={handleChange} />
-                                                    <label htmlFor="upload-paper" className="flex flex-col items-center justify-center w-full h-full text-center">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 text-indigo-600 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"   >
-                                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M16 12l-4-4m0 0l-4 4m4-4v12" />
-                                                        </svg>
-                                                        <p className="text-gray-700">Click or Drag to Upload Paper</p>
-                                                    </label>
-                                                </div> */}
                                                     <input type="file" id="paper" name="paper" onChange={handleChange} accept=".pdf,.doc,.docx" required className="w-full p-2   border text-sm  rounded-md border-gray-200 ring-1 ring-transparent bg-white focus:ring-[#0B4F8E] focus:outline-none" />
+                                                    <p className=" text-xs mt-3">* Maximum File Size: 10 MB</p>
                                                 </div>
                                                 {uploadFile && (
                                                     <div className="mt-4 bg-white p-3 rounded shadow flex justify-between items-center">

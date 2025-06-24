@@ -42,7 +42,7 @@ try {
     $mail->Username   = 'info.iciscm@gmail.com';
     $mail->Password   = 'fbme xwre bpvx dzxh';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port       = 587;            
+    $mail->Port       = 587;
 
     $mail->setFrom('info.iciscm@gmail.com', 'Paper Submission System');
     $mail->addAddress('info.iciscm@gmail.com', 'Paper Submissions');
@@ -52,11 +52,9 @@ try {
     $file_attached = false;
     if (isset($_FILES['paper']) && $_FILES['paper']['error'] == UPLOAD_ERR_OK) {
         $uploadedFile = $_FILES['paper'];
-
         if ($uploadedFile['size'] > 10 * 1024 * 1024) {
             throw new Exception("File size too large. Maximum 10MB allowed.");
         }
-
         $allowed_types = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
         $file_type = mime_content_type($uploadedFile['tmp_name']);
 
