@@ -42,10 +42,7 @@ function Abstracting() {
             if (formData.paper) {
                 formDataToSend.append('paper', formData.paper);
             }
-            const response = await fetch('http://192.168.29.174/iciscm/send_mail.php', {
-                method: 'POST',
-                body: formDataToSend,
-            });
+            const response = await fetch('http://192.168.29.174/iciscm/send_mail.php', { method: 'POST', body: formDataToSend, });
             if (response.ok) {
                 const result = await response.text();
                 setStatus(result);
