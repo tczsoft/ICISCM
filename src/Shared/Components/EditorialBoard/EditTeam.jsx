@@ -28,7 +28,6 @@ function EditTeam({ position, Name, location, dataAos, avatar }) {
         <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
             {/* Background gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-purple-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
             {/* Position badge */}
             <div className="relative bg-[#269C53] text-white px-4 py-3 text-center font-semibold text-sm tracking-wide">
                 {position}
@@ -41,17 +40,9 @@ function EditTeam({ position, Name, location, dataAos, avatar }) {
                     {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-110"></div> */}
                     <div className="relative bg-white rounded-full p-1">
                         {avatar ? (
-                            <img
-                                data-aos={dataAos}
-                                src={avatar}
-                                className="w-20 h-20 rounded-full object-cover border-2 border-gray-200 group-hover:border-transparent transition-all duration-300"
-                                alt={`${Name}'s avatar`}
-                                onError={(e) => {
-                                    e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(Name)}&background=1B1F3B&color=ffffff&size=80&bold=true`;
-                                }}
-                            />
+                            <img data-aos={dataAos} src={avatar} className="w-20 h-20 rounded-full object-cover border-2 border-gray-200 group-hover:border-transparent transition-all duration-300" alt={`${Name}'s avatar`} onError={(e) => { e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(Name)}&background=1B1F3B&color=ffffff&size=80&bold=true`; }} />
                         ) : (
-                            <div className="w-20 h-20 rounded-full bg-[#56AE58] flex items-center justify-center text-white font-bold text-xl border-2 border-gray-200 group-hover:border-transparent transition-all duration-300">
+                            <div className="w-20 h-20 rounded-full bg-[#56AE58] flex items-center justify-center text-white font-bold text-xl  border-gray-200 group-hover:border-transparent transition-all duration-300">
                                 {Name?.charAt(0)?.toUpperCase() || 'U'}
                             </div>
                         )}

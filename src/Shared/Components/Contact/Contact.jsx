@@ -61,7 +61,7 @@ function Contact() {
                                         Contact Us
                                     </h1>
                                 </div>
-                                <div className="mx-auto max-w-screen-md   border-2  border-[#269C53] md:p-6  rounded-xl  p-3  relative overflow-hidden">
+                                <div className="mx-auto max-w-screen-md   border-2  border-[#269C53] md:p-6  rounded-xl  p-3  relative bg-gradient-to-br from-white to-gray-50 overflow-hidden">
                                     <div className="absolute top-0 right-0 w-20 h-20 bg-[#269C52] rounded-bl-full transform translate-x-6 -translate-y-6 -hover:scale-110 transition-transform duration-500"></div>
                                     <form onSubmit={handleSubmit} className="w-full space-y-4  " ngNativeValidate>
                                         <div>

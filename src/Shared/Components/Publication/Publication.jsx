@@ -39,7 +39,7 @@ function Publication() {
                         ].map((item, index) => (
                             <div key={index} className="  border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition duration-300">
                                 <div className='flex items-center gap-3  mb-2'>
-                                    <i className="fi fi-sr-calendar-clock flex items-center text-[#56AE58]"></i>
+                                    <i className="fi fi-rs-calendar flex items-center text-[#56AE58]"></i>
                                     <p className=" md:text-xl text-base font-semibold">{item.date}</p>
                                 </div>
                                 <p className="text-gray-700 md:text-base text-sm">{item.event}</p>
