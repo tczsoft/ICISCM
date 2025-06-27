@@ -21,7 +21,7 @@ function About() {
               </p>
               <div className='mx-auto flex items-center bg-[#269C52] text-white w-fit md:p-4 p-3 gap-2 rounded-xl'>
                 <i className="fi fi-ss-earth-americas flex items-center md:text-3xl text-xl"></i>
-                <p className="md:text-base text-sm">Location <br />Chennai, India</p>
+                <p className="md:text-base text-sm">Location <br />Beijing, China</p>
               </div>
             </div>
           </div>

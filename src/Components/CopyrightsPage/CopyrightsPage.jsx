@@ -5,7 +5,7 @@ import HelmetComponent from '../Helmet/HelmetProvider'
 function CopyrightsPage() {
     return (
         <>
-            <HelmetComponent title="Copyrights - International Journal of Advanced Trends in Robotics and Automation" />
+            <HelmetComponent title="Copyrights - International Conference on Intelligent Systems and Computational Methods" />
             <Copyrights />
         </>
     )

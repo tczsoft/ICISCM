@@ -80,16 +80,16 @@ const Header = () => {
   return (
     <>
       <section className="bg-primary">
-        <div className="max-w-[80rem] mx-auto md:px-5 px-3 md:py-0 py-2 bg-white  border-b-black  border-b">
+        <div className="max-w-[80rem] mx-auto md:px-5 px-3 md:py-0 py-2 bg-[#56AE58] border-b-black  border-b">
           <div className="flex items-center justify-between lg:gap-0  gap-5  ">
             <Link to='/'>
-              <div className="md:hidden block text-black ">
-                ICISCM
+              <div className="md:hidden block   ">
+                <img className='w-32 h-14 object-contain' src="/assets/Images/ICISCM.png" alt="" />
                 {/* <img className='w-40' src="/assets/Images/ICBDCC.png" alt="" /> */}
               </div>
             </Link>
             <div className={`md:hidden block  ${menuOpen ? "z-50" : ""}`}>
-              <Hamburger toggled={menuOpen} color="#1B1F3B" toggle={setMenuOpen} />
+              <Hamburger toggled={menuOpen} color="#fff" toggle={setMenuOpen} />
             </div>
           </div>
         </div>
