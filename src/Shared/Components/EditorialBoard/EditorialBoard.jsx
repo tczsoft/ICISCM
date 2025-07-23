@@ -197,7 +197,7 @@ function EditorialBoard({ position, Name, location, name, department, university
                 <div>
                 </div>
             </section>
-            <section className="flex flex-col md:gap-5 gap-3 max-w-[60rem]  bg-gray-100 mb-10 md:px-5 px-3 mx-auto  md:py-10 py-5" >
+            <section className="flex flex-col md:gap-5 gap-3 max-w-[60rem]  rounded-lg bg-gray-100 mb-10 md:px-5 px-3 mx-auto  md:py-10 py-5" >
                 <h1 className="  mx-auto font-semibold lg:text-2xl text-lg text-[#269C52]">
                     Editorial Board
                 </h1>
