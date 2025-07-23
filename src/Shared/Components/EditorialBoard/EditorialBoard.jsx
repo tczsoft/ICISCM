@@ -134,7 +134,7 @@ function EditorialBoard({ position, Name, location, name, department, university
         },
         {
             name: "Tusar Kanti Dash",
-            department: "Department of Electronics & Communication Engineering",
+            department: "Department of Electronics and Communication Engineering",
             university: "C V Raman Global University",
             location: "India"
         },
