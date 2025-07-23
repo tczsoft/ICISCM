@@ -3,11 +3,36 @@ import LastSection from '../Last/LastSection';
 
 function Issues({ }) {
     const Tech = [
-        { Name: 'Sunil Kumar Alavilli', position: 'Sephora', location: 'California, USA' },
-        { Name: 'Deepa Bhadana', position: 'CCS Univeristy', location: 'UP, India' },
-        { Name: 'Nagendra Kumar Musham', position: 'Celer Systems Inc', location: 'California, USA' },
-        { Name: 'Xi Zhang', position: 'Lecturer(University of KU Leuven)', location: 'Belgium' },
-        { Name: 'Rajya Lakshmi Gudivaka', position: 'Wipro', location: 'Hyderabad, India' },
+
+        {
+            name: "A.V.L.N. SUJITH",
+            department: "Department of Computer Science and Engineering",
+            university: "JNTUA University",
+            location: "India"
+        },
+
+        {
+            name: "Hansi Gunasinghe",
+            department: "Department of Computing and Information Systems",
+            university: "Sabaragamuwa University",
+            location: "Sri Lanka"
+        },
+
+        {
+            name: "Ijegwa David Acheme",
+            department: "Department of Computer Science",
+            university: "Edo State University",
+            location: "Nigeria"
+        },
+        {
+            name: "Asghar Ali Shah",
+            department: "Department of computer science",
+            university: "Bahria university",
+            location: "Pakistan"
+        },
+
+
+
     ];
     return (
         <>
@@ -15,9 +40,9 @@ function Issues({ }) {
                 <h1 className="  mx-auto font-semibold lg:text-2xl text-lg text-[#269C52]">
                     Editorial Board
                 </h1>
-                <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-10 gap-5">
+                <div className="grid xl:grid-cols-1 lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 grid-cols-1 ">
                     {Tech.map((member, index) => (
-                        <Edit key={index} position={member.position} Name={member.Name} location={member.location} />
+                        <Edit key={index} position={member.position} name={member.name} university={member.university} department={member.department} location={member.location} />
                     ))}
                 </div>
             </section>

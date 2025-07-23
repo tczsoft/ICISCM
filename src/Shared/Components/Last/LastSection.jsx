@@ -13,13 +13,13 @@ function LastSection() {
                                     <i className="fi fi-sr-marker items-center xl:text-5xl  md:text-3xl  flex justify-end"></i>
                                     <p className="xl:text-2xl text-center">
                                         {/* International Convention Center, */}
-                                        Beijing, China</p>
+                                        Jakarta, Indonesia</p>
                                 </div>
                             </div>
                             <div className="bg-[#269C53] md:p-10 p-5 w-full h-full transform -skew-x-12 rounded-xl">
                                 <div className="transform skew-x-12 flex flex-col gap-5">
                                     <i className="fi fi-rr-calendar items-center xl:text-5xl md:text-3xl flex justify-end"></i>
-                                    <p className="xl:text-2xl">September 26-27, 2025 9:00 AM - 6:00 PM</p>
+                                    <p className="xl:text-2xl">2<sup>nd</sup> May, 2025 9:00 AM - 6:00 PM</p>
                                 </div>
                             </div>
                             <div className="bg-[#269C53] md:p-10 p-5 w-full h-full transform -skew-x-12 rounded-xl ">

@@ -5,7 +5,6 @@ import LastSection from '../Last/LastSection'
 function About() {
   return (
     <>
-
       <section className="flex flex-col  md:gap-10 gap-5  max-w-[80rem]  md:py-10 py-5 mx-auto md:px-5 px-3   items-center justify-center">
         <section className="grid md:grid-cols-2 grid-cols-1 md:gap-5 gap-3 items-center">
           <div className=' flex flex-col md:gap-5 gap-3'>
@@ -21,7 +20,7 @@ function About() {
               </p>
               <div className='mx-auto flex items-center bg-[#269C52] text-white w-fit md:p-4 p-3 gap-2 rounded-xl'>
                 <i className="fi fi-ss-earth-americas flex items-center md:text-3xl text-xl"></i>
-                <p className="md:text-base text-sm">Location <br />Beijing, China</p>
+                <p className="md:text-base text-sm">Location <br />Jakarta, Indonesia</p>
               </div>
             </div>
           </div>

@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
               <div className="text-center  md:text-left mx-auto flex flex-col gap-4">
                 {/* <h3 className="text-2xl font-bold mb-2">ICISCM</h3> */}
-                <img className=' w-28 mx-auto md:mx-0' src="/assets/Images/ICISCM.png" alt="" />
+                <img className=' w-28 mx-auto md:mx-0' rel='preload' src="/assets/Images/ICISCM.png" alt="" />
 
                 <p className="text-sm text-gray-200">
                   International Conference on Intelligent Systems and Computational Methods
@@ -36,7 +36,7 @@ const Footer = () => {
                 <h4 className="text-lg font-semibold mb-2">Contact</h4>
                 <ul className="space-y-1 text-sm">
                   <li>Email: <a href="mailto:info.iciscm@gmail.com" className="underline">info.iciscm@gmail.com</a></li>
-                  <li>Location: Beijing, China</li>
+                  <li>Location: Jakarta, Indonesia</li>
                 </ul>
               </div>
             </div>

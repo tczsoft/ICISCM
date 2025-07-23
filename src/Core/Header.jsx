@@ -33,12 +33,12 @@ const Header = () => {
         },
         {
           to: "/organizing-committee",
-          label: "Organizing Committee",
+          label: "Organizing Committee & Editorial Board",
         },
-        {
-          to: "/editorial-board",
-          label: "Editorial Board",
-        },
+        // {
+        //   to: "/editorial-board",
+        //   label: "Editorial Board",
+        // },
       ],
     },
     {
@@ -51,7 +51,7 @@ const Header = () => {
         },
         {
           to: "/key-dates",
-          label: "Key Dates & Registration Details",
+          label: "Key Dates",
         },
         // {
         //   to: "/key-dates",

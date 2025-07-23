@@ -77,12 +77,12 @@ export const Home = () => {
   ];
 
   const date = [
-    { Dates: '22-07-2025', Title: 'Full Paper Submission Deadline' },
-    { Dates: '29-07-2025', Title: 'Notification of Decision' },
-    { Dates: '05-08-2025', Title: 'Deadline for Submitting Revised Full Paper' },
-    { Dates: '12-08-2025', Title: 'Notification of Acceptance' },
-    { Dates: '19-08-2025', Title: 'Camera-Ready Paper Submission' },
-    { Dates: '26-08-2025', Title: 'Last Date for Registration / Payment' },
+    { Dates: '01-04-2025', Title: 'Full Paper Submission Deadline' },
+    { Dates: '08-04-2025', Title: 'Notification of Decision' },
+    { Dates: '14-04-2025', Title: 'Deadline for Submitting Revised Full Paper' },
+    { Dates: '18-04-2025', Title: 'Notification of Acceptance' },
+    { Dates: '22-04-2025', Title: 'Final Paper Submission' },
+    { Dates: '28-04-2025', Title: 'Last Date for Registration' },
   ];
 
   return (
@@ -131,14 +131,42 @@ export const Home = () => {
             <div className="bg-white w-fit p-10  flex items-center gap-4 rounded-t-xl relative top-2 overflow-hidden">
               <i className="fi fi-ss-earth-americas flex items-center text-3xl text-[#2457c5]"></i>
               <p className="md:text-xl">Location :<br />
-                Beijing, China</p>
+                Jakarta, Indonesia</p>
               <div className="absolute top-0 right-0 w-20 h-20 bg-[#269C52] rounded-bl-full transform translate-x-6 -translate-y-6 -hover:scale-110 transition-transform duration-500"></div>
             </div>
           </div>
         </section>
       </section>
+      <section className="bg-white">
+        <section className="max-w-[90rem] pt-5 md:pt-10 mx-auto md:px-5 px-3">
+          <section className="grid md:grid-cols-1 grid-cols-1 md:gap-5 gap-3 items-start">
+            <div className='flex flex-col md:gap-4 gap-2'>
+              <h1 className="text-center w-fit mx-auto rounded-full   font-semibold lg:text-2xl text-lg">
+                Our Mission
+              </h1>
+              <p className="text-justify md:text-base text-sm leading-7">
+                <p className="text-gray-700 text-lg leading-relaxed text-justify">
+                  The mission of the International Conference on Intelligent Systems and Computational Methods is to create a dynamic platform for researchers, academicians, industry professionals, and students to exchange knowledge, share research innovations, and explore collaborative opportunities in the fields of intelligent computing, data science, machine learning, and computational engineering.
+                  <br /><br />
+                  Our goal is to foster interdisciplinary dialogue and bridge the gap between theoretical advancements and real-world applications. We aim to support the global research community by encouraging the presentation of novel ideas, facilitating constructive discussions, and promoting ethical and impactful technological development. Through inclusive participation and high-quality academic contributions, the conference strives to drive innovation, inspire future research, and address the challenges of an increasingly digital and intelligent world.
+                </p>
+              </p>
+            </div>
+            {/* <div className=" flex flex-col md:gap-4 gap-2">
+              <h1 className="text-center w-fit mx-auto rounded-full   font-semibold lg:text-2xl text-lg">
+                Conference Objectives
+              </h1>
+              <p className="text-justify md:text-base text-sm leading-7">
+                <p className="text-gray-700 text-lg leading-relaxed text-justify">
+                  The primary objective of this conference is to bring together scholars, researchers, and professionals from academia and industry to present and discuss the latest innovations, trends, and challenges in intelligent systems and computational methodologies. The conference aims to facilitate the dissemination of groundbreaking research, foster interdisciplinary collaboration, and inspire technological advancements that can drive societal progress and global development.
+                </p>              </p>
+            </div> */}
+          </section>
+
+        </section>
+      </section>
       <section className=" pt-10 md:pt-10 flex flex-col md:gap-10  gap-10">
-        <section className="  max-w-[70rem]   mx-auto md:px-5 px-3  flex flex-col md:gap-5 gap-3">
+        {/* <section className="  max-w-[70rem]   mx-auto md:px-5 px-3  flex flex-col md:gap-5 gap-3">
           <h1 className=" text-center font-semibold lg:text-2xl text-lg">
             Key Invitees
           </h1>
@@ -157,7 +185,7 @@ export const Home = () => {
               <Technical key={index} Name={member.Name} Position={member.Position} location={member.location} dataAos="flip-left" />
             ))}
           </div>
-        </section>
+        </section> */}
         <section className="  max-w-[100rem]  mx-auto md:px-5 px-3 ">
           <div className="  bg-[#A6D8A7] md:p-10 p-5 rounded-3xl shadow-xl  flex flex-col md:gap-5 gap-3">
             <h1 className="text-center mx-auto font-semibold lg:text-2xl text-lg ">

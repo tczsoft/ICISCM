@@ -12,7 +12,7 @@ function Contct() {
                                     <i className="fi fi-sr-marker items-center xl:text-5xl  md:text-3xl  flex justify-end"></i>
                                     <p className="xl:text-2xl text-center">
                                         {/* International Convention Center, */}
-                                        Beijing, China</p>
+                                        Jakarta, Indonesia</p>
                                 </div>
                             </div>
                             <div className="bg-[#269C53] md:p-10 p-5 w-full h-full transform -skew-x-12 rounded-xl">
