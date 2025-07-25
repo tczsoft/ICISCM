@@ -115,7 +115,7 @@ export const Home = () => {
               <h1 className="text-center w-fit mx-auto rounded-full   font-semibold lg:text-2xl text-lg">
                 About the Conference
               </h1>
-              <p className="text-justify md:text-base text-sm leading-7">Step into the future of intelligent technologies at the International Conference on Intelligent Systems and Computational Methods (ICISCM).
+              <p className="text-justify md:text-base text-sm leading-7">Step into the future of intelligent technologies at the International Conference on Intelligent Systems and Computational Methods.
                 This premier global event unites researchers, academicians, industry experts, and students to explore innovative ideas, emerging trends, and practical applications in intelligent systems and computational techniques. ICISCM serves as a dynamic platform for presenting cutting-edge research, exchanging knowledge, and fostering collaborations that drive advancements in automation, machine learning, optimization, and real-world problem solving through computational intelligence. </p>
             </div>
             <div className=" flex flex-col md:gap-4 gap-2">
@@ -123,7 +123,7 @@ export const Home = () => {
                 Scope of Conference
               </h1>
               <p className="text-justify md:text-base text-sm leading-7">
-                Join us at the International Conference on Intelligent Systems and Computational Methods (ICISCM) — a premier forum that brings together a global community of researchers, academicians, industry professionals, and students to delve into the latest developments in intelligent technologies and computational strategies. This event is designed to foster impactful collaborations, encourage innovative thinking, and highlight pioneering research that addresses theoretical foundations and real-world applications across areas such as machine learning, optimization, data analytics, automated decision-making, and complex system modeling.
+                Join us at the International Conference on Intelligent Systems and Computational Methods — a premier forum that brings together a global community of researchers, academicians, industry professionals, and students to delve into the latest developments in intelligent technologies and computational strategies. This event is designed to foster impactful collaborations, encourage innovative thinking, and highlight pioneering research that addresses theoretical foundations and real-world applications across areas such as machine learning, optimization, data analytics, automated decision-making, and complex system modeling.
               </p>
             </div>
           </section>

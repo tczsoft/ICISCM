@@ -31,7 +31,7 @@ function About() {
         <section className="">
           <div className="mx-auto text-justify text-gray-700 space-y-4 text-sm md:text-base leading-7">
             <p className='leading-7'>
-              The International Conference on Intelligent Systems and Computational Methods (ICISCM) focuses on the latest innovations, research, and applications in intelligent systems and computational techniques. The conference welcomes contributions in areas such as artificial intelligence, machine learning, data science, optimization, automation, soft computing, and high-performance computing. It aims to provide a platform for academic and industry experts to share knowledge and advance the development of smart, adaptive, and efficient solutions to complex problems.
+              The International Conference on Intelligent Systems and Computational Methods focuses on the latest innovations, research, and applications in intelligent systems and computational techniques. The conference welcomes contributions in areas such as artificial intelligence, machine learning, data science, optimization, automation, soft computing, and high-performance computing. It aims to provide a platform for academic and industry experts to share knowledge and advance the development of smart, adaptive, and efficient solutions to complex problems.
             </p>
           </div>
         </section>
