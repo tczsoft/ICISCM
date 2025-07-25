@@ -207,11 +207,16 @@ function EditorialBoard({ position, Name, location, name, department, university
                     ))}
                 </div>
             </section>
-
-
             <LastSection />
         </>
     )
 }
 
 export default EditorialBoard
+
+
+
+
+
+
+
