@@ -21,9 +21,9 @@ function Abstracting() {
     };
 
 
-
-    const handleChange = (e) => {
+    const handleFileInputChange = (e) => {
         const { name, type, files, value } = e.target;
+
         // For file preview display
         if (files && files.length > 0) {
             setFileName(files[0].name); // update UI
@@ -69,7 +69,7 @@ function Abstracting() {
             googleSheetsParams.append('Email_Address', formData.Email_Address);
             googleSheetsParams.append('Institution_Name', formData.Institution_Name);
             googleSheetsParams.append('Paper_Track', formData.Paper_Track);
-            const mailPromise = fetch('http://192.168.29.85/icngths/icngths/send_mail.php', {
+            const mailPromise = fetch('https://iciscm.com/api/send_mail.php', {
                 method: 'POST',
                 body: formDataToSend,
             });
@@ -93,7 +93,6 @@ function Abstracting() {
 
             if (mailSuccess && sheetsSuccess) {
                 setStatus(`Submission successful! Data sent to both email and Google Sheets (${journalName}). Submission ID: ${uniqueId}`);
-
                 setFormData({
                     Paper_Title: '',
                     Author_FUll_Name: '',
@@ -102,13 +101,14 @@ function Abstracting() {
                     Paper_Track: '',
                     Paper_File: null,
                 });
+                setFileName('');
                 const fileInput = document.getElementById('Paper_File');
                 if (fileInput) {
                     fileInput.value = '';
                 } else {
                     console.error('Element with ID "Paper_File" not found.');
                 }
-                toast.success(`Paper submitted successfully! Submission ID: ${uniqueId}`);
+                toast.success(`Paper submitted successfully!`);
 
             } else if (mailSuccess && !sheetsSuccess) {
                 setStatus('Email sent successfully, but there might be an issue with Google Sheets.');
@@ -233,27 +233,27 @@ function Abstracting() {
                                                     <label for="Paper_Title" className="block mb-2 text-sm text-[#1B1F3B mt-4 ">
                                                         Paper Title
                                                     </label>
-                                                    <input type="text" ngModel id="Paper_Title" name="Paper_Title" value={formData.Paper_Title} onChange={handleChange} className="shadow-sm bg-white    text-black       border text-sm  rounded-md border-gray-200  focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   mt-4" placeholder="Enter the Paper Title" required />
+                                                    <input type="text" ngModel id="Paper_Title" name="Paper_Title" value={formData.Paper_Title} onChange={handleFileInputChange} className="shadow-sm bg-white    text-black       border text-sm  rounded-md border-gray-200  focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   mt-4" placeholder="Enter the Paper Title" required />
                                                 </div>
                                                 <div>
                                                     <label for="Author_FUll_Name" className="block mb-2 text-sm text-[#1B1F3B] mt-4">
                                                         Name
                                                     </label>
-                                                    <input type="text" name="Author_FUll_Name" id="Author_FUll_Name" ngModel value={formData.Author_FUll_Name} onChange={handleChange} className="shadow-sm bg-white   border    rounded-md border-gray-200  text-black text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   mt-4        "
+                                                    <input type="text" name="Author_FUll_Name" id="Author_FUll_Name" ngModel value={formData.Author_FUll_Name} onChange={handleFileInputChange} className="shadow-sm bg-white   border    rounded-md border-gray-200  text-black text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   mt-4        "
                                                         placeholder="Enter Your Name" required />
                                                 </div>
                                                 <div>
                                                     <label for="Email_Address" className="block mb-2 text-sm   text-[#1B1F3B]   mt-4  ">
                                                         Email
                                                     </label>
-                                                    <input type="Email_Address" name="Email_Address" id="Email_Address" value={formData.Email_Address} ngModel onChange={handleChange} className="shadow-sm bg-white   border   rounded-md border-gray-200  text-black text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   mt-4 "
+                                                    <input type="Email_Address" name="Email_Address" id="Email_Address" value={formData.Email_Address} ngModel onChange={handleFileInputChange} className="shadow-sm bg-white   border   rounded-md border-gray-200  text-black text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   mt-4 "
                                                         placeholder="name@gmail.com" required />
                                                 </div>
                                                 {/* <div>
                                                     <label for="number" className="block mb-2 text-sm   text-[#1B1F3B]   mt-4 "  >
                                                         Contact Number
                                                     </label>
-                                                    <input type="text" name="number" id="number" value={formData.number} ngModel onChange={handleChange} className="shadow-sm bg-white    border    rounded-md border-gray-200  text-black text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   mt-4  "
+                                                    <input type="text" name="number" id="number" value={formData.number} ngModel onChange={handleFileInputChange} className="shadow-sm bg-white    border    rounded-md border-gray-200  text-black text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5   mt-4  "
                                                         placeholder="Enter Your Mobile Number" required
                                                     />
                                                 </div> */}
@@ -261,47 +261,47 @@ function Abstracting() {
                                                     <label for="Institution_Name" className="block mb-2 text-sm   text-[#1B1F3B] mt-4 " >
                                                         Institution Name
                                                     </label>
-                                                    <input type="text" name="Institution_Name" id="Institution_Name" value={formData.Institution_Name} ngModel onChange={handleChange} className="shadow-sm      rounded-md border-gray-200 border  text-black text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 mt-4" placeholder="Enter Your Institute" required />
+                                                    <input type="text" name="Institution_Name" id="Institution_Name" value={formData.Institution_Name} ngModel onChange={handleFileInputChange} className="shadow-sm      rounded-md border-gray-200 border  text-black text-sm   focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 mt-4" placeholder="Enter Your Institute" required />
                                                 </div>
                                                 <div>
                                                     <label for="Paper_Track" className="block mb-2 text-sm text-[#1B1F3B] mt-4 " >
                                                         Paper Track
                                                     </label>
                                                     <select name="Paper_Track" id="Paper_Track" value={formData.Paper_Track || ""}
-                                                        onChange={handleChange}
+                                                        onChange={handleFileInputChange}
                                                         required
                                                         className="shadow-sm bg-white border rounded-md border-gray-200 text-black text-sm focus:ring-primary-500 focus:border-primary-500 block w-full p-2 mt-4"                                                >
                                                         <option value="">Select Track</option>
-                                                        <option value="IntelligentSystems">Intelligent Systems and Applications</option>
-                                                        <option value="ComputationalMethods">Computational Intelligence & Soft Computing</option>
-                                                        <option value="AI">Artificial Intelligence and Knowledge Engineering</option>
-                                                        <option value="ML">Machine Learning and Deep Learning</option>
-                                                        <option value="DataScience">Data Science and Intelligent Decision Support</option>
-                                                        <option value="BigData">Big Data Analytics and Processing</option>
-                                                        <option value="CyberSecurity">Cybersecurity and Information Assurance</option>
-                                                        <option value="IoT">Internet of Things (IoT) and Sensor Networks</option>
-                                                        <option value="CloudEdge">Cloud, Edge, and Fog Computing</option>
-                                                        <option value="RoboticsAutomation">Robotics, Control Systems, and Automation</option>
-                                                        <option value="NaturalLanguageProcessing">Natural Language Processing and Chatbots</option>
-                                                        <option value="ComputerVision">Computer Vision and Image Processing</option>
-                                                        <option value="Bioinformatics">Bioinformatics and Computational Biology</option>
-                                                        <option value="QuantumComputing">Quantum Computing and Emerging Technologies</option>
-                                                        <option value="SmartSystems">Smart Cities, Smart Grid, and Intelligent Environments</option>
+                                                        <option  >Intelligent Systems and Applications</option>
+                                                        <option  >Computational Intelligence & Soft Computing</option>
+                                                        <option  >Artificial Intelligence and Knowledge Engineering</option>
+                                                        <option  >Machine Learning and Deep Learning</option>
+                                                        <option  >Data Science and Intelligent Decision Support</option>
+                                                        <option  >Big Data Analytics and Processing</option>
+                                                        <option  >Cybersecurity and Information Assurance</option>
+                                                        <option  >Internet of Things (IoT) and Sensor Networks</option>
+                                                        <option  >Cloud, Edge, and Fog Computing</option>
+                                                        <option  >Robotics, Control Systems, and Automation</option>
+                                                        <option  >Natural Language Processing and Chatbots</option>
+                                                        <option  >Computer Vision and Image Processing</option>
+                                                        <option  >Bioinformatics and Computational Biology</option>
+                                                        <option  >Quantum Computing and Emerging Technologies</option>
+                                                        <option  >Smart Cities, Smart Grid, and Intelligent Environments</option>
                                                     </select>
                                                 </div>
                                                 <div className="md:col-span-2 mt-5">
                                                     <label className="block mb-2 text-sm text-[#1B1F3B]">Upload Paper</label>
-                                                    <input type="file" id="paper" name="paper" onChange={handleChange} accept=".pdf,.doc,.docx" required className="w-full p-2   border text-sm  rounded-md border-gray-200 ring-1 ring-transparent bg-white focus:ring-[#0B4F8E] focus:outline-none" />
+                                                    <input type="file" id="Paper_File" name="Paper_File" onChange={handleFileInputChange} accept=".pdf,.doc,.docx" required className="w-full p-2   border text-sm  rounded-md border-gray-200 ring-1 ring-transparent bg-white focus:ring-[#0B4F8E] focus:outline-none" />
                                                     <p className=" text-xs mt-3">* Maximum File Size: 10 MB</p>
                                                 </div>
-                                                {uploadFile && (
+                                                {/* {uploadFile && (
                                                     <div className="mt-4 bg-white p-3 rounded shadow flex justify-between items-center">
                                                         <div className="text-sm text-gray-800 truncate w-full pr-4">{uploadFile.name}</div>
                                                         <button onClick={handleRemoveFile} className="text-red-500 hover:text-red-700 transition cursor-pointer" title="Remove file"   >
                                                             ✕
                                                         </button>
                                                     </div>
-                                                )}
+                                                )} */}
                                                 <div className="text-center mx-auto mt-5  md:col-span-2">
                                                     <button type="submit" disabled={status === 'Sending...'}
                                                         className="py-3 px-5 text-sm  bg-primary-blue-color  text-center  bg-[#14AE5C] cursor-pointer font-semibold hover:text-primary-blue-color rounded-md    text-white   bg-primary-red-color sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300    " >
