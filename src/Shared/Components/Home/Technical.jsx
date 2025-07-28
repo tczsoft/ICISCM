@@ -1,24 +1,24 @@
 
 function Technical({ Name, Position, location }) {
     return (
-        <section className="rounded-xl overflow-hidden    relative ">
+        <section className="     relative ">
             {/* Corner Cut Shape */}
-            <div className='grid grid-cols-2 items-center bg-[#269C53]  '>
-                <div className='p-5'>
-                    <img rel="preload" src="/assets/Images/home6.jpg" className='w-full h-full col-span-1 rounded-xl ' alt="" />
+            {/* <div className='grid grid-cols-2 items-center bg-[#269C53]  '> */}
+               <div className="flex flex-col items-center gap-3 bg-[#269C53] hover:bg-[#34b865] transition-all duration-300 ease-in-out shadow-md hover:shadow-lg rounded-xl p-6 w-full max-w-md mx-auto transform hover:scale-105">
+                <div className="text-center">
+                    <h3 className="text-xl md:text-xl font-semibold text-white transition-colors duration-300">
+                        Dr. {Name}
+                    </h3>
                 </div>
-                <div className="flex flex-col items-center gap-3 z-10 mx-auto bg-gradient-to-r from-[#269C53] to-[#306042] justify-center col-span-1 w-full h-full">
-                    <div className=" text-white font-semibold  text-sm md:text-base ">
-                        {Name}
-                    </div>
-                    <div className="text-white md:text-lg text-sm font-medium">
-                        {Position}
-                    </div>
-                    <div className="text-white md:text-lg text-sm font-medium">
-                        {location}
-                    </div>
+
+                <div className="flex items-center gap-2 text-white transition-colors duration-300">
+                    <p className="text-[15px] font-medium">
+                      (  {Position}, {location} )
+                    </p>
                 </div>
             </div>
+            {/* </div> */}
+            {/* </div> */}
         </section>
     );
 }

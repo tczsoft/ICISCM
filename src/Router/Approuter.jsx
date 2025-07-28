@@ -17,6 +17,7 @@ import ScrollToTop from "./ScrollToTop";
 import ContactPage from "../Components/ContactPage/ContactPage";
 import EditorialPage from "../Components/EditorialPage/EditorialPage";
 import IssuePage from "../Components/IssuePage/IssuePage";
+import Statisticspage from "../Components/Statisticspage/Statisticspage";
 
 
 function Approuter() {
@@ -34,6 +35,7 @@ function Approuter() {
             <Route path="/paper-submission" element={<AbstractingPage />} />
             <Route path="/conference-tracks" element={<PeerPage />} />
             <Route path="/key-dates" element={<PublicationPage />} />
+            <Route path="/conference-statistics" element={<Statisticspage />} />
             {/* <Route path="/author-guidelines" element={<GuidelinePage />} />
             <Route path="/article-processing" element={<ArticlePage />} />
             <Route path="/plagiarism" element={<PlagiarismPage />} />

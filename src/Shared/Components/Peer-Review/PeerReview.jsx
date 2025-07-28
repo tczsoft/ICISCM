@@ -1,14 +1,27 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import LastSection from '../Last/LastSection'
+import { FaFilePdf } from 'react-icons/fa'
 
 function PeerReview() {
     return (
         <>
             <section className="flex flex-col md:gap-5 gap-3 max-w-[90rem] py-5 md:py-10  mx-auto md:px-5 px-3">
+                <div className="">
+                    <h1 className=" mx-auto font-semibold lg:text-2xl text-lg pb-5 text-center text-[#269C52]">
+                        Call for Papers
+                    </h1>
+                    <p className="text-gray-600 text-sm md:text-base leading-[30px] text-justify">
+                        We are delighted to invite researchers, academicians, industry professionals, innovators, and students from around the globe to submit original research contributions to the International Conference on Intelligent Systems and Computational Methods . This prestigious event serves as a vibrant platform to foster collaboration, spark innovative ideas, and showcase cutting-edge research that is shaping the future of intelligent and computational technologies.
+                    </p>
+                    <p className="text-gray-600 text-sm md:text-base leading-[30px] text-justify">
+                        In today’s digital and data-driven era, intelligent systems and computational methods play a pivotal role in transforming industries, revolutionizing decision-making, and enhancing human life across diverse domains—from healthcare and automation to smart cities and sustainable development. ICISCM 2025 aspires to unite the global community of experts to exchange knowledge, discuss critical challenges, and present forward-thinking solutions in this dynamic and ever-expanding field.
+                    </p>
+                </div>
                 <h1 className=" mx-auto font-semibold lg:text-2xl text-lg  text-[#269C52]">
                     Conference Tracks
                 </h1>
+
                 <div className="  grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:px-4 max-w-7xl mx-auto">
                     {[
                         {
@@ -78,6 +91,59 @@ function PeerReview() {
                         </>
                     ))}
                 </div>
+                {/* <div className="py-10">
+                <a
+                    href="/proceedings.pdf" // Replace with actual link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center  justify-center gap-2 text-[#025DFB] font-semibold underline hover:text-[#1B1F3B] transition "
+                >
+                    <FaFilePdf />
+                    View Complete Conference Proceedings
+                </a></div> */}
+                <section className="max-w-[90rem] mx-auto px-4  pt-5">
+                    <h2 className=" mx-auto font-semibold lg:text-2xl text-lg  pb-5 text-[#269C52]  text-center">
+                        Call for Reviewers
+                    </h2>
+
+                    <p className="text-gray-700 mb-4 leading-[30px] text-justify">
+                        ICISCM-2025 invites dedicated researchers, academicians, and industry professionals to join as reviewers for this prestigious international conference. As a reviewer, you will contribute to maintaining the academic quality of the event by evaluating submissions in your area of expertise and providing constructive feedback to authors.
+                    </p>
+
+                    <p className="text-gray-700 mb-4 leading-[30px] text-justify">
+                        Being part of the reviewer panel offers a valuable opportunity to stay updated with the latest research trends, expand your professional network, and receive formal recognition through a certificate of appreciation. Join us in shaping the future of intelligent systems and computational technologies.                    </p>
+
+                    <h3 className="text-lg font-semibold text-[#269C53] mt-6 mb-2">
+                        Reviewer Responsibilities:
+                    </h3>
+
+                    <ul className="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Conduct fair, objective, and timely reviews of assigned research papers.</li>
+                        <li>Evaluate submissions based on originality, technical quality, relevance, and clarity.</li>
+                        <li>Provide constructive feedback to help authors improve the quality of their work.</li>
+                        <li>Maintain confidentiality and avoid any conflicts of interest.</li>
+                        <li>Adhere to the review deadlines set by the organizing committee.</li>
+                        <li>Promote the conference within your academic and professional networks.</li>
+                        <li>Uphold ethical standards and contribute to the integrity of the review process.</li>
+                    </ul>
+
+                    {/* <p className="text-gray-700 mt-6">
+                        If you are interested in serving as a reviewer, please apply using our online form
+                        <a href="#" className="text-blue-600 hover:underline ml-1">[click here]</a>.
+                        You may also share this opportunity with peers having relevant expertise.
+                    </p> */}
+
+                    <p className="text-gray-700 mt-4">
+                        Thank you for considering this opportunity. We look forward to your valuable contribution to the success of ICISCM-2025.
+                    </p>
+
+                    <div className="mt-6 font-semibold text-[#1B1F3B]">
+                        Best regards, <br />
+                        <span className="text-black">ICISCM-2025 Organizing Committee</span>
+                    </div>
+                </section>
+
+
             </section>
 
             <LastSection />

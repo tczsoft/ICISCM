@@ -32,47 +32,53 @@ export const Home = () => {
 
   const invitees = [
     {
-      location: 'location',
-      Name: 'Name',
-      Position: 'Position',
+      location: 'South Korea',
+      Name: 'Subrata Bhattacharjee',
+      Position: ' Busan National University',
     },
-    {
-      location: 'location',
-      Name: 'Name',
-      Position: 'Position',
+     {
+      location: 'South Korea',
+      Name: 'Subrata Bhattacharjee',
+      Position: ' Busan National University',
     },
-    {
-      location: 'location',
-      Name: 'Name',
-      Position: 'Position',
-    },
-    {
-      location: 'location',
-      Name: 'Name',
-      Position: 'Position',
-    },
+    
+    // {
+    //   location: 'location',
+    //   Name: 'Name',
+    //   Position: 'Position',
+    // },
+    // {
+    //   location: 'location',
+    //   Name: 'Name',
+    //   Position: 'Position',
+    // },
+    // {
+    //   location: 'location',
+    //   Name: 'Name',
+    //   Position: 'Position',
+    // },
   ];
 
   const technical = [
-    {
-      location: 'location',
-      Name: 'Name',
-      Position: 'Position',
+   {
+      location: 'South Korea',
+      Name: 'Subrata Bhattacharjee',
+      Position: ' Busan National University',
     },
-    {
-      location: 'location',
-      Name: 'Name',
-      Position: 'Position',
+   {
+      location: 'South Korea',
+      Name: 'Subrata Bhattacharjee',
+      Position: ' Busan National University',
     },
-    {
-      location: 'location',
-      Name: 'Name',
-      Position: 'Position',
+   {
+      location: 'South Korea',
+      Name: 'Subrata Bhattacharjee',
+      Position: ' Busan National University',
     },
-    {
-      location: 'location',
-      Name: 'Name',
-      Position: 'Position',
+   {
+      location: 'South Korea',
+      Name: 'Subrata Bhattacharjee',
+      Position: ' Busan National University',
     },
   ];
 
@@ -166,7 +172,7 @@ export const Home = () => {
         </section>
       </section>
       <section className=" pt-10 md:pt-10 flex flex-col md:gap-10  gap-10">
-        {/* <section className="  max-w-[70rem]   mx-auto md:px-5 px-3  flex flex-col md:gap-5 gap-3">
+        <section className="  max-w-[70rem]   mx-auto md:px-5 px-3  flex flex-col md:gap-5 gap-3">
           <h1 className=" text-center font-semibold lg:text-2xl text-lg">
             Key Invitees
           </h1>
@@ -178,14 +184,14 @@ export const Home = () => {
         </section>
         <section className="  max-w-[100rem]  mx-auto md:px-5 px-3  flex flex-col md:gap-5  gap-3">
           <h1 className=" text-center font-semibold lg:text-2xl text-lg">
-            Technical Program Committee
+            Keynote Speakers
           </h1>
-          <div className="grid 2xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-10 gap-5">
+          <div className="grid 2xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-10 gap-5">
             {technical.map((member, index) => (
               <Technical key={index} Name={member.Name} Position={member.Position} location={member.location} dataAos="flip-left" />
             ))}
           </div>
-        </section> */}
+        </section>
         <section className="  max-w-[100rem]  mx-auto md:px-5 px-3 ">
           <div className="  bg-[#A6D8A7] md:p-10 p-5 rounded-3xl shadow-xl  flex flex-col md:gap-5 gap-3">
             <h1 className="text-center mx-auto font-semibold lg:text-2xl text-lg ">

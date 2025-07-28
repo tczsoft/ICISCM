@@ -5,6 +5,62 @@ import { useState } from 'react';
 
 function EditorialBoard({ position, Name, location, name, department, university, }) {
     const [isHovered, setIsHovered] = useState(false);
+    const organize = [
+        {
+            position: " CHAIRMAN",
+            name: "A.V.L.N. Sujith",
+            department: "Principal",
+
+        },
+        {
+            position: " CONVENOR",
+            name: "A.V.L.N. Sujith",
+            department: "Principal",
+
+        },
+        {
+            position: " CO-CONVENORS",
+            name: "A.V.L.N. Sujith",
+            department: "Principal",
+
+        },
+        {
+            position: " COORDINATORS",
+            name: "A.V.L.N. Sujith",
+            department: "Principal",
+
+        },
+        {
+            position: " COORDINATORS",
+            name: "A.V.L.N. Sujith",
+            department: "Principal",
+
+        },
+        {
+            position: " COORDINATORS",
+            name: "A.V.L.N. Sujith",
+            department: "Principal",
+
+        },
+        {
+            position: " MEMBERS",
+            name: "A.V.L.N. Sujith",
+            department: "Principal",
+
+        },
+        {
+            position: " MEMBERS",
+            name: "A.V.L.N. Sujith",
+            department: "Principal",
+
+        },
+        {
+            position: " MEMBERS",
+            name: "A.V.L.N. Sujith",
+            department: "Principal",
+
+        },
+    ]
     const Tech = [
 
         {
@@ -162,6 +218,17 @@ function EditorialBoard({ position, Name, location, name, department, university
 
 
     ];
+
+    const chairmanSection = organize.filter(item =>
+        ["CHAIRMAN", "CONVENOR", "CO-CONVENORS"].includes(item.position.trim())
+    );
+    const coordinatorSection = organize.filter(item =>
+        item.position.trim() === "COORDINATORS"
+    );
+    const membersSection = organize.filter(item =>
+        item.position.trim() === "MEMBERS"
+    );
+
     return (
         <>
             <section className="flex flex-col md:gap-5 gap-3 max-w-[90rem]  md:px-5 px-3 mx-auto  md:py-10 py-5" >
@@ -190,10 +257,57 @@ function EditorialBoard({ position, Name, location, name, department, university
                 </div>
 
                 {/* <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-10 gap-5">
-                    {Tech.map((member, index) => (
-                        <EditTeam key={index} position={member.position} Name={member.Name} location={member.location} dataAos="flip-left" />
+                    {organize.map((member, index) => (
+                        <EditTeam key={index} position={member.position} Name={member.name} department={member.department} dataAos="flip-left" />
                     ))}
                 </div> */}
+                <div className="">
+                    <h2 className="font-semibold lg:text-2xl text-lg text-[#269C53] mb-4 text-center">Organizing Committee</h2>
+                </div>
+                <section className="mb-10">
+                    <h2 className="text-xl font-bold text-[#269C53] mb-4 text-center">Chairman & Convenors</h2>
+                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-10 gap-5">
+                        {chairmanSection.map((member, index) => (
+                            <EditTeam
+                                key={`chair-${index}`}
+                                position={member.position}
+                                Name={member.name}
+                                department={member.department}
+                                dataAos="flip-left"
+                            />
+                        ))}
+                    </div>
+                </section>
+
+                <section className="mb-10 ">
+                    <h2 className="text-xl font-bold text-[#269C53] mb-4 text-center">Coordinators</h2>
+                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-10 gap-5">
+                        {coordinatorSection.map((member, index) => (
+                            <EditTeam
+                                key={`coord-${index}`}
+                                position={member.position}
+                                Name={member.name}
+                                department={member.department}
+                                dataAos="flip-left"
+                            />
+                        ))}
+                    </div>
+                </section>
+
+                <section className="mb-10">
+                    <h2 className="text-xl font-bold text-[#269C53] mb-4 text-center">Members</h2>
+                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-10 gap-5">
+                        {membersSection.map((member, index) => (
+                            <EditTeam
+                                key={`member-${index}`}
+                                position={member.position}
+                                Name={member.name}
+                                department={member.department}
+                                dataAos="flip-left"
+                            />
+                        ))}
+                    </div>
+                </section>
                 <div>
                 </div>
             </section>
