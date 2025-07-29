@@ -15,7 +15,7 @@ use PHPMailer\PHPMailer\SMTP;
 require_once realpath(__DIR__ . "/vendor/autoload.php");
 
 // Validate required fields
-$required_fields = ['firstname', 'secondname', 'email', 'number', 'message'];
+$required_fields = ['firstname', 'email', 'number', 'message'];
 $missing_fields = [];
 
 foreach ($required_fields as $field) {
@@ -43,9 +43,9 @@ try {
     $mail->Port       = 587;
 
     // Email setup to admin
-    $mail->setFrom('info.iciscm@gmail.com', 'ICNGTHS Enquiry');
-    $mail->addAddress('info.iciscm@gmail.com', 'ICNGTHS Enquiry');
-    $mail->addReplyTo($_POST['email'], $_POST['firstname'] . ' ' . $_POST['secondname']);
+    $mail->setFrom('info.iciscm@gmail.com', 'ICISCM Enquiry');
+    $mail->addAddress('info.iciscm@gmail.com', 'ICISCM Enquiry');
+    $mail->addReplyTo($_POST['email'], $_POST['firstname']    );
     $mail->isHTML(true);
     $mail->Subject = 'New Contact Form Submission';
 
@@ -56,7 +56,7 @@ try {
                 <tr>
                     <td style="padding: 12px 15px; border: 1px solid #dee2e6; font-weight: 600;">Name</td>
                     <td style="padding: 12px 15px; border: 1px solid #dee2e6;">' .
-                        htmlspecialchars($_POST['firstname']) . ' ' . htmlspecialchars($_POST['secondname']) . '</td>
+                        htmlspecialchars($_POST['firstname']) .  '</td>
                 </tr>
                 <tr style="background-color: #f0f4f7;">
                     <td style="padding: 12px 15px; border: 1px solid #dee2e6; font-weight: 600;">Phone Number</td>
@@ -81,7 +81,7 @@ try {
     ';
 
     $mail->AltBody = "Enquiry\n\n" .
-        "Name: " . $_POST['firstname'] . ' ' . $_POST['secondname'] . "\n" .
+        "Name: " . $_POST['firstname'] .  "\n" .
         "Email: " . $_POST['email'] . "\n" .
         "Phone: " . $_POST['number'] . "\n" .
         "Message: " . $_POST['message'];
@@ -99,10 +99,10 @@ try {
     $replyMail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $replyMail->Port       = 587;
 
-    $replyMail->setFrom('info.iciscm@gmail.com', 'ICNGTHS Team');
-    $replyMail->addAddress($_POST['email'], $_POST['firstname'] . ' ' . $_POST['secondname']);
+    $replyMail->setFrom('info.iciscm@gmail.com', 'ICISCM Team');
+    $replyMail->addAddress($_POST['email'], $_POST['firstname']  );
     $replyMail->isHTML(true);
-    $replyMail->Subject = 'Thank you for your enquiry - ICNGTHS 2025';
+    $replyMail->Subject = 'Thank you for your enquiry - ICISCM 2025';
 
     $replyMail->Body = '
         <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
@@ -110,16 +110,16 @@ try {
             <p>Thank you for contacting us. We have received your message and our team will get back to you shortly.</p>
             <p><strong>Your Submission Summary:</strong></p>
             <ul>
-                <li><strong>Name:</strong> ' . htmlspecialchars($_POST['firstname']) . ' ' . htmlspecialchars($_POST['secondname']) . '</li>
+                <li><strong>Name:</strong> ' . htmlspecialchars($_POST['firstname'])  .'</li>
                 <li><strong>Email:</strong> ' . htmlspecialchars($_POST['email']) . '</li>
                 <li><strong>Phone:</strong> ' . htmlspecialchars($_POST['number']) . '</li>
                 <li><strong>Message:</strong> ' . nl2br(htmlspecialchars($_POST['message'])) . '</li>
             </ul>
-            <p>Warm regards,<br>ICNGTHS 2025 Team</p>
+            <p>Warm regards,<br>ICISCM 2025 Team</p>
         </div>
     ';
 
-    $replyMail->AltBody = "Thank you " . $_POST['firstname'] . " for contacting us.\n\nWe have received your enquiry and will get back to you soon.\n\n- ICNGTHS 2025 Team";
+    $replyMail->AltBody = "Thank you " . $_POST['firstname'] . " for contacting us.\n\nWe have received your enquiry and will get back to you soon.\n\n- ICISCM 2025 Team";
 
     $replyMail->send();
 

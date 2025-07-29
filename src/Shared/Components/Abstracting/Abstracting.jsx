@@ -69,7 +69,7 @@ function Abstracting() {
             googleSheetsParams.append('Email_Address', formData.Email_Address);
             googleSheetsParams.append('Institution_Name', formData.Institution_Name);
             googleSheetsParams.append('Paper_Track', formData.Paper_Track);
-            const mailPromise = fetch('https://iciscm.com/api/send_mail.php', {
+            const mailPromise = fetch('https://iciscm.com/api/send_mail.PHP', {
                 method: 'POST',
                 body: formDataToSend,
             });
