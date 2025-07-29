@@ -49,7 +49,7 @@ function Statisticsconference() {
                      <h2 className="font-semibold lg:text-2xl text-lg text-[#269C53]  text-center mb-5 ">Global Reach</h2>
                     <p className="text-black text-center md:text-lg text-base font-semibold leading-[30px]">We proudly hosted contributions from a diverse set of countries and institutions, including :</p>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-5 max-w-[800px] mx-auto">
-                        {location.map((item, index) => (<div key={index} className="flex gap-2"> <IoLocationSharp className='mt-1 text-[#269C53] text-xl flex shrink-0 ' /> <p className="text-gray-700 md:text-base text-sm">{item.location}</p></div>))}
+                        {location.map((item, index) => (<div key={index} className="flex gap-2"> <IoLocationSharp className=' text-[#269C53] text-xl flex shrink-0 md:mt-0.5' /> <p className="text-gray-700 md:text-base text-sm">{item.location}</p></div>))}
                     </div>
                 
                 <p className="md:text-base text-sm text-justify leading-[30px] mt-5">
