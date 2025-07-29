@@ -42,7 +42,6 @@ function Abstracting() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setStatus('Sending...');
-
         const journalName = 'iciscm';
         // Generate unique ID: journalName + YYYYMMDD + HHMMSS
         const now = new Date();
