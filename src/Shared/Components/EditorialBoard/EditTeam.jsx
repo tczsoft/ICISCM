@@ -36,8 +36,8 @@ function EditTeam({ position, Name, location, dataAos, avatar,department }) {
             {/* Card content */}
             <div className="relative p-6 text-center">
                 {/* Avatar container with animated border */}
-                <div className="relative inline-block mb-4">
-                    {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-110"></div> */}
+                {/* <div className="relative inline-block mb-4">
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-110"></div>
                     <div className="relative bg-white rounded-full p-1">
                         {avatar ? (
                             <img data-aos={dataAos} src={avatar} className="w-20 h-20 rounded-full object-cover border-2 border-gray-200 group-hover:border-transparent transition-all duration-300" alt={`${Name}'s avatar`} onError={(e) => { e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(Name)}&background=1B1F3B&color=ffffff&size=80&bold=true`; }} />
@@ -47,7 +47,7 @@ function EditTeam({ position, Name, location, dataAos, avatar,department }) {
                             </div>
                         )}
                     </div>
-                </div>
+                </div> */}
 
                 {/* Name and location */}
                 <div className="space-y-2">

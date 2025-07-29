@@ -11,10 +11,10 @@ function PeerReview() {
                     <h1 className=" mx-auto font-semibold lg:text-2xl text-lg pb-5 text-center text-[#269C52]">
                         Call for Papers
                     </h1>
-                    <p className="text-gray-600 text-sm md:text-base leading-[30px] text-justify">
+                    <p className=" text-sm md:text-base leading-[30px] text-justify mb-4">
                         We are delighted to invite researchers, academicians, industry professionals, innovators, and students from around the globe to submit original research contributions to the International Conference on Intelligent Systems and Computational Methods . This prestigious event serves as a vibrant platform to foster collaboration, spark innovative ideas, and showcase cutting-edge research that is shaping the future of intelligent and computational technologies.
                     </p>
-                    <p className="text-gray-600 text-sm md:text-base leading-[30px] text-justify">
+                    <p className=" text-sm md:text-base leading-[30px] text-justify ">
                         In today’s digital and data-driven era, intelligent systems and computational methods play a pivotal role in transforming industries, revolutionizing decision-making, and enhancing human life across diverse domains—from healthcare and automation to smart cities and sustainable development. ICISCM 2025 aspires to unite the global community of experts to exchange knowledge, discuss critical challenges, and present forward-thinking solutions in this dynamic and ever-expanding field.
                     </p>
                 </div>
@@ -83,7 +83,7 @@ function PeerReview() {
                                             {track.title}
                                         </h3>
                                     </div>
-                                    <p className="text-gray-600 text-sm md:text-base mt-1">
+                                    <p className="text-gray-600 text-sm md:text-base mt-2 text-justify leading-[30px]">
                                         {track.desc}
                                     </p>
                                 </div>
@@ -106,18 +106,18 @@ function PeerReview() {
                         Call for Reviewers
                     </h2>
 
-                    <p className="text-gray-700 mb-4 leading-[30px] text-justify">
+                    <p className=" mb-4 leading-[30px] text-justify">
                         ICISCM-2025 invites dedicated researchers, academicians, and industry professionals to join as reviewers for this prestigious international conference. As a reviewer, you will contribute to maintaining the academic quality of the event by evaluating submissions in your area of expertise and providing constructive feedback to authors.
                     </p>
 
-                    <p className="text-gray-700 mb-4 leading-[30px] text-justify">
+                    <p className=" mb-4 leading-[30px] text-justify">
                         Being part of the reviewer panel offers a valuable opportunity to stay updated with the latest research trends, expand your professional network, and receive formal recognition through a certificate of appreciation. Join us in shaping the future of intelligent systems and computational technologies.                    </p>
 
                     <h3 className="text-lg font-semibold text-[#269C53] mt-6 mb-2">
                         Reviewer Responsibilities:
                     </h3>
 
-                    <ul className="list-disc list-inside space-y-2 text-gray-700">
+                    <ul className="list-disc list-inside space-y-2 text-justify leading-[30px]">
                         <li>Conduct fair, objective, and timely reviews of assigned research papers.</li>
                         <li>Evaluate submissions based on originality, technical quality, relevance, and clarity.</li>
                         <li>Provide constructive feedback to help authors improve the quality of their work.</li>
@@ -133,13 +133,13 @@ function PeerReview() {
                         You may also share this opportunity with peers having relevant expertise.
                     </p> */}
 
-                    <p className="text-gray-700 mt-4">
+                    <p className=" mt-4">
                         Thank you for considering this opportunity. We look forward to your valuable contribution to the success of ICISCM-2025.
                     </p>
 
-                    <div className="mt-6 font-semibold text-[#1B1F3B]">
+                    <div className="mt-6 font-semibold text-[#269C53]">
                         Best regards, <br />
-                        <span className="text-black">ICISCM-2025 Organizing Committee</span>
+                        <span className="text-[#269C53]">ICISCM-2025 Organizing Committee</span>
                     </div>
                 </section>
 

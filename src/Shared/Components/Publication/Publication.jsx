@@ -10,10 +10,10 @@ function Publication() {
                     <h1 className="text-center text-[#269C52] font-semibold lg:text-2xl text-lg md:mb-4 mb-3">
                         Key Dates
                     </h1>
-                    <p className="text-gray-700 md:text-lg leading-relaxed text-center mb-5">
+                    <p className="md:text-base text-sm text-justify leading-[30px] mb-5">
                         Participants are encouraged to take note of the important deadlines for the International Conference on Intelligent Systems and Computational Methods. These dates include the submission of full papers, notification of acceptance, registration deadlines, and the final camera-ready submission. Staying informed of these key milestones will ensure timely participation and help authors prepare their contributions effectively. All deadlines are strictly followed to maintain the integrity of the review and publication process.
                     </p>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:px-4 max-w-7xl mx-auto">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:px-4 max-w-7xl mx-auto pt-5">
                         {[
                             {
                                 date: "01-04-2025",

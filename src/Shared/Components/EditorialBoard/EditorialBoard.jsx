@@ -236,14 +236,14 @@ function EditorialBoard({ position, Name, location, name, department, university
                     <h1 className="text-center text-[#269C52] font-semibold lg:text-2xl text-lg">
                         Organizing Committee
                     </h1>
-                    <p className=" md:text-base text-sm "> Our conference is led by a dedicated team of professionals and academicians from diverse institutions and research backgrounds, working together to ensure a high-quality, impactful, and smooth conference experience.
+                    <p className=" md:text-base text-sm text-justify leading-[30px]"> Our conference is led by a dedicated team of professionals and academicians from diverse institutions and research backgrounds, working together to ensure a high-quality, impactful, and smooth conference experience.
                     </p>
                 </div>
                 <div className='flex flex-col gap-3 '>
                     <h1 className="text-center text-[#269C52] font-semibold lg:text-2xl text-lg">
                         Roles and Responsibilities
                     </h1>
-                    <p className="  md:text-base text-sm">  The Organizing Committee plays a crucial role in the successful execution of the International Conference on Intelligent Systems and Computational Methods. Their responsibilities include strategic planning, coordinating with keynote speakers and session chairs, managing paper submissions and peer reviews, and overseeing the publication process. They ensure smooth logistics, including venue arrangements, registration, sponsorships, and publicity. Additionally, the committee fosters collaboration among academic, industrial, and research communities, aiming to provide a platform for knowledge exchange, networking, and innovation in the field of intelligent systems and computational methods.
+                    <p className="  md:text-base text-sm text-justify leading-[30px]">  The Organizing Committee plays a crucial role in the successful execution of the International Conference on Intelligent Systems and Computational Methods. Their responsibilities include strategic planning, coordinating with keynote speakers and session chairs, managing paper submissions and peer reviews, and overseeing the publication process. They ensure smooth logistics, including venue arrangements, registration, sponsorships, and publicity. Additionally, the committee fosters collaboration among academic, industrial, and research communities, aiming to provide a platform for knowledge exchange, networking, and innovation in the field of intelligent systems and computational methods.
 
                     </p>
                 </div>
@@ -251,7 +251,7 @@ function EditorialBoard({ position, Name, location, name, department, university
                     <h1 className="text-center text-[#269C52] font-semibold lg:text-2xl text-lg">
                         Significance of the Committee
                     </h1>
-                    <p className=" md:text-base text-sm ">
+                    <p className=" md:text-base text-sm text-justify leading-[30px]">
                         The Organizing Committee serves as the backbone of the conference, bringing together diverse expertise to ensure academic excellence and operational efficiency. Their involvement reflects a commitment to fostering meaningful discourse in the fields of intelligent systems and computational methods. By coordinating across various domains—from technical content to international collaborations—they ensure the conference meets global standards and creates lasting impact for researchers, students, and practitioners alike.
                     </p>
                 </div>
