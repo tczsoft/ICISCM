@@ -19,6 +19,12 @@ function EditorialBoard({ position, Name, location, name, department, university
 
         },
         {
+            position: " CONVENOR",
+            name: "A.V.L.N. Sujith",
+            department: "Principal",
+
+        },
+        {
             position: " CO-CONVENORS",
             name: "A.V.L.N. Sujith",
             department: "Principal",
@@ -38,6 +44,18 @@ function EditorialBoard({ position, Name, location, name, department, university
         },
         {
             position: " COORDINATORS",
+            name: "A.V.L.N. Sujith",
+            department: "Principal",
+
+        },
+        {
+            position: " COORDINATORS",
+            name: "A.V.L.N. Sujith",
+            department: "Principal",
+
+        },
+        {
+            position: " MEMBERS",
             name: "A.V.L.N. Sujith",
             department: "Principal",
 
@@ -266,7 +284,7 @@ function EditorialBoard({ position, Name, location, name, department, university
                 </div>
                 <section className="mb-10">
                     <h2 className="text-xl font-bold text-[#269C53] mb-4 text-center">Chairman & Convenors</h2>
-                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-10 gap-5">
+                    <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-10 gap-5">
                         {chairmanSection.map((member, index) => (
                             <EditTeam
                                 key={`chair-${index}`}
@@ -281,7 +299,7 @@ function EditorialBoard({ position, Name, location, name, department, university
 
                 <section className="mb-10 ">
                     <h2 className="text-xl font-bold text-[#269C53] mb-4 text-center">Coordinators</h2>
-                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-10 gap-5">
+                    <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-10 gap-5">
                         {coordinatorSection.map((member, index) => (
                             <EditTeam
                                 key={`coord-${index}`}
@@ -296,7 +314,7 @@ function EditorialBoard({ position, Name, location, name, department, university
 
                 <section className="mb-10">
                     <h2 className="text-xl font-bold text-[#269C53] mb-4 text-center">Members</h2>
-                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-10 gap-5">
+                    <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-10 gap-5">
                         {membersSection.map((member, index) => (
                             <EditTeam
                                 key={`member-${index}`}
