@@ -94,12 +94,12 @@ function Statisticsconference() {
 
                         <div className="mt-4 ">
                             <a
-                                href="/assets/Images/2.jpg"
+                                href="/assets/Images/Certificate.jpg"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 <img
-                                    src="/assets/Images/2.jpg"
+                                    src="/assets/Images/Certificate.jpg"
                                     alt="Certificate"
                                     className="w-40  rounded shadow-md hover:scale-105 transition-transform duration-300"
                                 />
