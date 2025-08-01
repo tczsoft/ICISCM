@@ -1,5 +1,6 @@
 import React from 'react'
 import PeerReview from '../../Shared/Components/Peer-Review/PeerReview'
+import HelmetComponent from '../HelmetComponent/HelmetComponent'
 
 function PeerPage() {
     return (
