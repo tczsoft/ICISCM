@@ -110,7 +110,7 @@ function EditorialBoard({ position, Name, location, name, department, university
         {
             name: "P. Rajesh",
             department: "Department of Computer Science and Engineering",
-            university: "Institute of Science and Technolog",
+            university: "Vel Tech Rangarajan Dr. Sagunthala R & D Institute of Science and Technology",
             location: "India"
         },
         {
@@ -122,7 +122,7 @@ function EditorialBoard({ position, Name, location, name, department, university
         {
             name: "K. Kishore Kumar",
             department: "Department of Computer Science and Engineering",
-            university: "Institute of Science and Technolog",
+            university: "Vel Tech Rangarajan Dr. Sagunthala R & D Institute of Science and Technology",
             location: "India"
         },
         {
