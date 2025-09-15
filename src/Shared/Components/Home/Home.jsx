@@ -5,6 +5,7 @@ import KeyDates from "./KeyDates";
 import LastSection from "../Last/LastSection";
 import Invitees from "./Invitees";
 import Technical from "./Technical";
+import Marquee from "react-fast-marquee";
 
 export const Home = () => {
   const team = [
@@ -36,12 +37,12 @@ export const Home = () => {
       Name: 'Subrata Bhattacharjee',
       Position: ' Busan National University',
     },
-     {
+    {
       location: 'South Korea',
       Name: 'Subrata Bhattacharjee',
       Position: ' Busan National University',
     },
-    
+
     // {
     //   location: 'location',
     //   Name: 'Name',
@@ -60,22 +61,22 @@ export const Home = () => {
   ];
 
   const technical = [
-   {
+    {
       location: 'South Korea',
       Name: 'Subrata Bhattacharjee',
       Position: ' Busan National University',
     },
-   {
+    {
       location: 'South Korea',
       Name: 'Subrata Bhattacharjee',
       Position: ' Busan National University',
     },
-   {
+    {
       location: 'South Korea',
       Name: 'Subrata Bhattacharjee',
       Position: ' Busan National University',
     },
-   {
+    {
       location: 'South Korea',
       Name: 'Subrata Bhattacharjee',
       Position: ' Busan National University',
@@ -91,8 +92,24 @@ export const Home = () => {
     { Dates: '28-04-2025', Title: 'Last Date for Registration' },
   ];
 
+
+  const imageItems = [
+    { src: '/assets/Images/associates/1.png', },
+    { src: '/assets/Images/associates/2.jpg', },
+    { src: '/assets/Images/associates/3.jpg', },
+    { src: '/assets/Images/associates/4.jpg', },
+    { src: '/assets/Images/associates/5.jpg', },
+    { src: '/assets/Images/associates/6.jpg', },
+    { src: "/assets/Images/associates/scopus.png", },
+    { src: "/assets/Images/associates/8.jpg", },
+    { src: "/assets/Images/associates/9.jpg", },
+    { src: "/assets/Images/associates/10.jpg", },
+    { src: "/assets/Images/associates/11.jpg", },
+  ];
+
   return (
     <>
+    <div className="overflow-hidden">
       <section className="relative lg:h-[calc(100dvh-30px)] w-full overflow-hidden">
         <div className="absolute top-0 left-0 h-full w-full bg-[#269C53] z-0 clip-md"></div>
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 h-full max-w-[100rem] gap-10 lg:py-0 py-10 mx-auto items-center px-4">
@@ -172,7 +189,7 @@ export const Home = () => {
         </section>
       </section>
       <section className=" pt-10 md:pt-10 flex flex-col md:gap-10  gap-10">
-        <section className="  max-w-[70rem]   mx-auto md:px-5 px-3  flex flex-col md:gap-5 gap-3">
+        {/* <section className="  max-w-[70rem]   mx-auto md:px-5 px-3  flex flex-col md:gap-5 gap-3">
           <h1 className=" text-center font-semibold lg:text-2xl text-lg">
             Key Invitees
           </h1>
@@ -191,7 +208,7 @@ export const Home = () => {
               <Technical key={index} Name={member.Name} Position={member.Position} location={member.location} dataAos="flip-left" />
             ))}
           </div>
-        </section>
+        </section> */}
         <section className="  max-w-[100rem]  mx-auto md:px-5 px-3 ">
           <div className="  bg-[#A6D8A7] md:p-10 p-5 rounded-3xl shadow-xl  flex flex-col md:gap-5 gap-3">
             <h1 className="text-center mx-auto font-semibold lg:text-2xl text-lg ">
@@ -204,6 +221,24 @@ export const Home = () => {
             </div>
           </div>
         </section>
+        <div className="max-w-[1450px] mx-auto">
+          <div className=" pt-10 space-y-10   px-4">
+            <h1 className="text-center w-fit mx-auto rounded-full   font-semibold lg:text-2xl text-lg">
+              Inexed Journals
+            </h1>
+            <p className="text-center font-medium opacity-85 text-[18px] leading-[30px] max-w-[1000px] mx-auto">The Selective accepted papers of our International Conference on Intelligent Systems and Computational Methods will be recommended to publish in the following index & publisher Journals.</p>
+          </div>
+          <Marquee direction='left' pauseOnClick pauseOnHover>
+            <div className="  flex  pb-10 pt-10 ">
+              {imageItems.map((item, index) => (
+                <div key={index} className=" flex justify-center mr-10  py-5" >
+                  <img src={item.src} alt="images" className=" w-[300px] rounded-lg shadow-[0_0_8px_rgba(0,0,0,0.15)] hover:shadow-[0_0_20px_rgba(0,0,0,0.15)] transition duratiom-300" />
+                </div>
+              ))}
+            </div>
+          </Marquee>
+
+        </div>
         <LastSection />
       </section>
       {/* Key Invites Section */}
@@ -225,6 +260,7 @@ export const Home = () => {
           </section> */}
       {/* Divider */}
       {/* Venue/Contact Info */}
+      </div>
     </>
   );
 };
