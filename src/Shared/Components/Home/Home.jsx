@@ -224,7 +224,7 @@ export const Home = () => {
         <div className="max-w-[1450px] mx-auto">
           <div className=" pt-10 space-y-10   px-4">
             <h1 className="text-center w-fit mx-auto rounded-full   font-semibold lg:text-2xl text-lg">
-              Inexed Journals
+              Indexed Journals
             </h1>
             <p className="text-center font-medium opacity-85 text-[18px] leading-[30px] max-w-[1000px] mx-auto">The Selective accepted papers of our International Conference on Intelligent Systems and Computational Methods will be recommended to publish in the following index & publisher Journals.</p>
           </div>
