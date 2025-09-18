@@ -188,7 +188,7 @@ export const Home = () => {
 
         </section>
       </section>
-      <section className=" pt-10 md:pt-10 flex flex-col md:gap-10  gap-10">
+      <section className="max-w-[100rem]  mx-auto pt-10 md:pt-10 flex flex-col md:gap-10  gap-10">
         {/* <section className="  max-w-[70rem]   mx-auto md:px-5 px-3  flex flex-col md:gap-5 gap-3">
           <h1 className=" text-center font-semibold lg:text-2xl text-lg">
             Key Invitees
@@ -209,7 +209,7 @@ export const Home = () => {
             ))}
           </div>
         </section> */}
-        <section className="  max-w-[100rem]  mx-auto md:px-5 px-3 ">
+        <section className="   md:px-5 px-3 ">
           <div className="  bg-[#A6D8A7] md:p-10 p-5 rounded-3xl shadow-xl  flex flex-col md:gap-5 gap-3">
             <h1 className="text-center mx-auto font-semibold lg:text-2xl text-lg ">
               Key Dates
@@ -221,15 +221,15 @@ export const Home = () => {
             </div>
           </div>
         </section>
-        <div className="max-w-[1450px] mx-auto">
-          <div className=" pt-10 space-y-10   px-4">
-            <h1 className="text-center w-fit mx-auto rounded-full   font-semibold lg:text-2xl text-lg">
+        <div className="">
+          <div className="     px-4">
+            <h1 className="text-center w-fit mx-auto rounded-full   font-semibold md:text-2xl text-lg">
               Indexed Journals
             </h1>
-            <p className="text-center font-medium opacity-85 text-[18px] leading-[30px] max-w-[1000px] mx-auto">The Selective accepted papers of our International Conference on Intelligent Systems and Computational Methods will be recommended to publish in the following index & publisher Journals.</p>
+            <p className="text-center font-medium opacity-85 text-[16px] md:text-[18px] leading-[30px] max-w-[1000px] mx-auto mt-4">The Selective accepted papers of our International Conference on Intelligent Systems and Computational Methods will be recommended to publish in the following index & publisher Journals.</p>
           </div>
           <Marquee direction='left' pauseOnClick pauseOnHover>
-            <div className="  flex  pb-10 pt-10 ">
+            <div className="  flex  pb-10 pt-4">
               {imageItems.map((item, index) => (
                 <div key={index} className=" flex justify-center mr-10  py-5" >
                   <img src={item.src} alt="images" className=" w-[300px] rounded-lg shadow-[0_0_8px_rgba(0,0,0,0.15)] hover:shadow-[0_0_20px_rgba(0,0,0,0.15)] transition duratiom-300" />

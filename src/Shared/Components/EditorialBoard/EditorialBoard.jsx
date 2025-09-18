@@ -262,13 +262,13 @@ function EditorialBoard({ position, Name, location, name, department, university
         {
             name: "Dr. Jhanghiz Syahrivar",
             university: "President University",
-            expertise: "  Department of Information Technology",
-            country: " Indonesia "
+            expertise: "Department of Information Technology",
+            country: "Indonesia "
         },
         {
             name: "Dr. Alven Ritonga",
-            university: " Universitas Wijaya Putra",
-            expertise: " Department of Computer Science",
+            university: "Universitas Wijaya Putra",
+            expertise: "Department of Computer Science",
             country: "Indonesia"
         },
 
@@ -291,122 +291,122 @@ function EditorialBoard({ position, Name, location, name, department, university
         {
             name: "Dr. Aram Sabr Tahr",
             university: "Cyprus International University",
-            expertise: "Department of Computer Science and Engineering ",
+            expertise: "Department of Computer Science and Engineering",
             country: "Cyprus"
         },
         {
             name: "Dr. Hua Qu",
             university: "Tianjin Medical University",
-            expertise: " Department of Biomedical Engineering and Technology",
+            expertise: "Department of Biomedical Engineering and Technology",
             country: "China"
         },
         {
             name: "Dr. Nor Musliza Mustafa",
-            university: " Selangor Islamic University",
+            university: "Selangor Islamic University",
             expertise: "Department of Creative Multimedia and Computing",
             country: "Malaysia"
         },
         {
             name: "Dr.  Dongfeng Li",
-            university: " Fuyang People's Hospital",
-            expertise: " Department of Medical Sciences",
+            university: "Fuyang People's Hospital",
+            expertise: "Department of Medical Sciences",
             country: "China"
         },
         {
             name: "Dr. Badamasi Sani Mohammed",
             university: "Al-Qalam University Katsina",
             expertise: "Department of Economics",
-            country: " Nigeria"
+            country: "Nigeria"
         },
         {
             name: "Dr. Hansi Gunasinghe",
-            university: "  Sabaragamuwa University of Sri Lanka",
-            expertise: "   Department of Computing and Information Systems",
+            university: "Sabaragamuwa University of Sri Lanka",
+            expertise: "Department of Computing and Information Systems",
             country: "Sri Lanka"
         },
         {
             name: "Dr. Wasan Alamro",
             university: "Auckland University of Technology",
-            expertise: "Department of Electrical and Electronics Engineering department ",
-            country: " New Zealand"
+            expertise: "Department of Electrical and Electronics Engineering",
+            country: "New Zealand"
         },
         {
             name: "Dr. Leandro N. Balico",
-            university: "  Federal University of Roraima",
-            expertise: " Department of Computer Science and Engineering ",
+            university: "Federal University of Roraima",
+            expertise: "Department of Computer Science and Engineering",
             country: "Brazil"
         },
         {
             name: "Dr. Alma Bangayan Manera",
             university: "Cagayan State University",
             expertise: "Department of Electronics and Communication Engineering",
-            country: " Philippines"
+            country: "Philippines"
         },
         {
             name: "Dr. Zouhour El-Abiad",
             university: "ESA Business School",
-            expertise: " Department of Computer Science and Engineering",
-            country: " Lebanon"
+            expertise: "Department of Computer Science and Engineering",
+            country: "Lebanon"
         },
         {
             name: "Dr. Arindom Kundu",
-            university: "   Daffodil International University",
+            university: "Daffodil International University",
             expertise: "Department of Computer Science and Engineering",
             country: "Bangladesh"
         },
         {
             name: "Dr. Stanley Adiele Okolie",
             university: "Federal University of Technology Owerri",
-            expertise: " Department of Information and Communication Technology",
+            expertise: "Department of Information and Communication Technology",
             country: "Nigeria"
         },
         {
             name: "Dr. Twana A. Hamad",
-            university: " Harran University",
+            university: "Harran University",
             expertise: "Department of Electronics and Communication Engineering",
             country: "Turkiye"
         },
         {
             name: "Dr.S. Murali Krishna",
             university: "Jawaharlal Nehru Technological University Anantapur",
-            expertise: "Department of  Information Technology",
-            country: " India"
+            expertise: "Department of Information Technology",
+            country: "India"
         },
         {
             name: "Dr. PPG Dinesh Asanka",
-            university: "  University of Kelaniya",
-            expertise: "   Department of  Industrial Management",
+            university: "University of Kelaniya",
+            expertise: "Department of  Industrial Management",
             country: "Sri Lanka"
         },
         {
             name: "Dr. Ameer Hamza",
-            university: " HITEC University",
-            expertise: " Department of Computer Engineering",
+            university: "HITEC University",
+            expertise: "Department of Computer Engineering",
             country: "Pakistan"
         },
         {
             name: "Dr.A. Gabriel ",
             university: "Sharda University",
-            expertise: "Department of Information Technology ",
-            country: " Uzbekistan "
+            expertise: "Department of Information Technology",
+            country: "Uzbekistan "
         },
         {
             name: "Dr. Nour Moustafa",
             university: "American University of the Middle East",
             expertise: "Department of Electronics and Communication Engineering",
-            country: " Kuwait"
+            country: "Kuwait"
         },
         {
             name: "Dr.Ing. Sian Lun Lau",
-            university: "  Sunway University",
+            university: "Sunway University",
             expertise: "Department of Engineering and Technology",
             country: "Malaysia"
         },
         {
             name: "Dr. Ziquan Feng",
-            university: " Hanyang University",
-            expertise: " Department of  Multicultural Pedagogy",
-            country: " South Korea"
+            university: "Hanyang University",
+            expertise: "Department of  Multicultural Pedagogy",
+            country: "South Korea"
         }
     ];
 
@@ -423,80 +423,80 @@ function EditorialBoard({ position, Name, location, name, department, university
         {
             name: "Dr. Yijun Wang",
             university: "Shandong University",
-            expertise: " Department of Computer Science",
+            expertise: "Department of Computer Science",
             country: "China"
         },
         {
             name: "Dr. Hung Nguyen",
             university: "Nha Trang university",
-            expertise: " Department of Information Technology",
+            expertise: "Department of Information Technology",
             country: "Vietnam"
         },
         {
             name: "Dr. Muhammad Umair Hassan",
-            university: " Norwegian University of Science and Technology",
-            expertise: " Department of ICT and Natural Sciences",
-            country: " Norway"
+            university: "Norwegian University of Science and Technology",
+            expertise: "Department of ICT and Natural Sciences",
+            country: "Norway"
         },
         {
             name: "Dr. Rahman Shafique",
             university: "Yeungnam University",
-            expertise: " Department of Information and Communication Engineering",
+            expertise: "Department of Information and Communication Engineering",
             country: " South Korea"
         },
         {
             name: "Dr. Stephen Ekwe",
-            university: " University of Cape Town",
-            expertise: " Department of Electrical Engineering",
+            university: "University of Cape Town",
+            expertise: "Department of Electrical Engineering",
             country: "South Africa"
         },
         {
             name: "Dr. Ali A.Abdul saeed",
             university: "wasit university",
-            expertise: " Department of Computer Science",
-            country: "  Iraq"
+            expertise: "Department of Computer Science",
+            country: "Iraq"
         },
         {
             name: "Dr. Meenakshi Gupta",
-            university: " National University of Singapore",
-            expertise: " Department of Electronics and Communication Engineering",
+            university: "National University of Singapore",
+            expertise: "Department of Electronics and Communication Engineering",
             country: "Singapore"
         },
         {
-            name: "Dr. R. Arun Kumar",
+            name: "Dr.R. Arun Kumar",
             university: "University of South Wales",
-            expertise: " Department of Digital Forensics & Cyber Security",
-            country: " United Kingdom"
+            expertise: "Department of Digital Forensics & Cyber Security",
+            country: "United Kingdom"
         },
         {
             name: "Dr. Asef Shahriar",
-            university: " Khulna University of Engineering & Technology",
+            university: "Khulna University of Engineering & Technology",
             expertise: "Department of Industrial Engineering and Management",
             country: "Bangladesh"
         },
         {
             name: "Dr. Ghasem Abbasi",
             university: "Islamic Azad University",
-            expertise: " Department of  Mathematics and Statistics",
+            expertise: "Department of  Mathematics and Statistics",
             country: "Iran"
         },
         {
             name: "Dr. Qian Liu",
-            university: " Krirk University",
+            university: "Krirk University",
             expertise: "Department of Information Technology",
             country: "Thailand"
         },
         {
             name: "Dr. Chinwe Peace Igiri",
             university: "Cavendish University",
-            expertise: " Department of Computer Science and Engineering",
-            country: " Uganda"
+            expertise: "Department of Computer Science and Engineering",
+            country: "Uganda"
         },
         {
             name: "Dr. Sakshi dua",
-            university: " Lovely Professional University",
+            university: "Lovely Professional University",
             expertise: "Department of Computer Applications",
-            country: " India"
+            country: "India"
         },
         {
             name: "Dr. Ernesto Carrillo Arellano",
@@ -506,81 +506,81 @@ function EditorialBoard({ position, Name, location, name, department, university
         },
         {
             name: "Dr. Marcelo M S Souza",
-            university: " Universidade Federal do Ceará",
-            expertise: "Department of Computer Science and Engineering ",
+            university: "Universidade Federal do Ceará",
+            expertise: "Department of Computer Science and Engineering",
             country: "Brazil"
         },
         {
             name: "Dr. Maryam Anwer",
-            university: " Majma university",
-            expertise: " Department of Industrial Engineering",
-            country: " Saudi Arabia"
+            university: "Majma university",
+            expertise: "Department of Industrial Engineering",
+            country: "Saudi Arabia"
         },
         {
             name: "Dr. Asma Sbeih",
             university: "Palestine Ahliya University",
-            expertise: "Department of Information Technology ",
+            expertise: "Department of Information Technology",
             country: "Palestine"
         },
         {
             name: "Dr. Brahim Issaoui",
-            university: " Qassim University",
-            expertise: " Department of Economics and Social Sciences",
-            country: " Saudi Arabia"
+            university: "Qassim University",
+            expertise: "Department of Economics and Social Sciences",
+            country: "Saudi Arabia"
         },
         {
             name: "Dr.M. Manojprabu",
             university: "Anna University Chennai",
             expertise: "Department of Biomedical Engineering",
-            country: " India"
+            country: "India"
         },
         {
             name: "Dr. Ammar Amjad",
-            university: " National Yang ming chiao tung university",
-            expertise: "Department of Computer Science and Engineering ",
+            university: "National Yang Ming Chiao Tung University",
+            expertise: "Department of Computer Science and Engineering",
             country: "Taiwan"
         },
         {
             name: "Dr. Ajaegbu Chigozirim",
             university: "Babcock University",
-            expertise: " Department of Information Technology",
+            expertise: "Department of Information Technology",
             country: "Nigeria"
         },
         {
             name: "Dr. Muhammad Asif Khan",
-            university: " Qatar University",
-            expertise: " Research Scientist at Qatar Mobility Innovations Center",
-            country: " Qatar"
+            university: "Qatar University",
+            expertise: "Research Scientist at Qatar Mobility Innovations Center",
+            country: "Qatar"
         },
         {
             name: "Dr. Leo John Baptist",
             university: "Botho University",
             expertise: "Department of Information Technology",
-            country: " Botswana"
+            country: "Botswana"
         },
         {
             name: "Dr. Mahdiyeh Khazaneha",
             university: "Kerman University of Medical Sciences",
-            expertise: " Department of  Neurology Research Center",
+            expertise: "Department of  Neurology Research Center",
             country: "Iran"
         },
         {
             name: "Dr.R. Lakshmana Kumar",
             university: "Tagore Institute of Engineering & Technology",
             expertise: "Department of Computer Science and Engineering",
-            country: " India"
+            country: "India"
         },
         {
             name: "Dr. Ghulam Gilanie",
             university: "The Islamia University of Bahawalpur",
-            expertise: "  Department of Computer Science",
+            expertise: "Department of Computer Science",
             country: "Pakistan"
         },
         {
             name: "Dr.A. Kushal Kanwar",
             university: "Shoolini University",
             expertise: "Department of Artificial Intelligence, Computers and Data science",
-            country: " India"
+            country: "India"
         }
     ];
 
