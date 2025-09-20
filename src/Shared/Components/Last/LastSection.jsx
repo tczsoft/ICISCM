@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { GiMicrophone } from "react-icons/gi";
 
 function LastSection() {
     return (
@@ -18,8 +19,8 @@ function LastSection() {
                             </div>
                             <div className="bg-[#269C53] md:p-10 p-5 w-full h-full transform -skew-x-12 rounded-xl">
                                 <div className="transform skew-x-12 flex flex-col gap-5">
-                                    <i className="fi fi-rr-calendar items-center xl:text-5xl md:text-3xl flex justify-end"></i>
-                                    <p className="xl:text-2xl">2<sup>nd</sup> May, 2025 9:00 AM - 6:00 PM</p>
+                                 <div className="items-center xl:text-5xl md:text-3xl flex justify-end"> < GiMicrophone className=" "/></div>  
+                                    <p className="xl:text-2xl text-center">International Conference on Intelligent Systems and Computational Methods</p>
                                 </div>
                             </div>
                             <div className="bg-[#269C53] md:p-10 p-5 w-full h-full transform -skew-x-12 rounded-xl ">
