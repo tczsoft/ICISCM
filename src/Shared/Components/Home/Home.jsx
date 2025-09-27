@@ -10,6 +10,29 @@ import Marquee from "react-fast-marquee";
 export const Home = () => {
 
   const [activeYear, setActiveYear] = useState("2025");
+  const [flipped, setFlipped] = useState(null);
+
+  const item = [
+    {
+      name: "Dr. Monday O. Eze",
+      department: "Department of Computer Science",
+      university: "Babcock University",
+      location: "Nigeria",
+    },
+    {
+      name: "Dr. Shriram Pandey",
+      department: "Department of Library & Information Science",
+      university: "University of East London",
+      location: "United Kingdom",
+    },
+    {
+      name: "Dr. Kabelo Given Chuma",
+      department: "Department of Information Science",
+      university: "University of South Africa",
+      location: "South Africa",
+    },
+  ]
+
 
 
   const team = [
@@ -249,8 +272,49 @@ export const Home = () => {
                 </div>
               </div>
             </div>
-
           </section>
+
+
+          <section className="md:px-5 px-3 ">
+            <div className="  bg-[#A6D8A7] md:p-10 p-5 rounded-3xl shadow-xl   ">
+              <h1 id="keyinvitees" className="scroll-mt-28 text-center mx-auto font-semibold lg:text-2xl text-lg ">
+                Key Invitees
+              </h1>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6   mx-auto">
+                {item.map((invitee, index) => (
+                  <div
+                    key={index}
+                    className={`group w-full h-48 xl:h-44 `} onClick={() => setFlipped(flipped === index ? null : index)}
+                  >
+                    <div className={`relative  w-full h-full transition-transform duration-500 [transform-style:preserve-3d] ${flipped === index ? "rotate-y-180" : ""} group-hover:rotate-y-180`}>
+                      {/* Front Side */}
+                      <div className="overflow-hidden absolute w-full h-full backface-hidden  bg-white text-black flex items-center justify-center rounded-xl  shadow-[0_0_8px_rgba(0,0,0,0.15)]">
+                        <h3 className="font-semibold text-xl   text-center p-4">
+                          {invitee.name}
+                        </h3><div className="absolute top-0 right-0 w-20 h-20 bg-[#269C52] rounded-bl-full transform translate-x-6 -translate-y-6 -hover:scale-110 transition-transform duration-500"></div>
+                      </div>
+                      {/* Back Side */}
+                      <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-white text-gray-800   flex flex-col items-center justify-center rounded-xl  p-4 shadow-[0_0_8px_rgba(0,0,0,0.15)]">
+                        <p className="text-base xl:text-lg text-center  mb-1">
+                          {invitee.department},
+                        </p>
+                        <p className="text-base xl:text-lg text-center  mb-1">
+                          {invitee.university},
+                        </p>
+                        <p className="text-base xl:text-lg text-center">
+                          {invitee.location}.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+            </div>
+          </section>
+
+
+
           <div className="">
             <div className="     px-4">
               <h1 className="text-center w-fit mx-auto rounded-full   font-semibold md:text-2xl text-lg">

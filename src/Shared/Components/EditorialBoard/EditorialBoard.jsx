@@ -385,7 +385,7 @@ function EditorialBoard({ position, Name, location, name, department, university
             country: "Pakistan"
         },
         {
-            name: "Dr.A. Gabriel ",
+            name: "Dr. Gabriel A. Ogunmola",
             university: "Sharda University",
             expertise: "Department of Information Technology",
             country: "Uzbekistan "

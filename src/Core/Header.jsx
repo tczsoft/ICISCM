@@ -221,6 +221,10 @@ const Header = () => {
           to: "/scope",
           label: "Scope of the Conference",
         },
+        {
+          to: "/#keyinvitees",
+          label: "Key Invitees",
+        },
        
       ],
     },
