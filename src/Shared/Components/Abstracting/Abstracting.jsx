@@ -133,10 +133,17 @@ function Abstracting() {
             <section className="max-w-screen-xl mx-auto w-full px-5 2xl:px-0  py-5 md:py-10 ">
                 <div className="lg:flex md:flex  gap-8">
                     <div className="max-w-[90rem] mx-auto w-full">
-                        <div className=' text-center mx-auto flex justify-center md:mb-5 mb-3'>
+                        <div className=' text-center mx-auto flex flex-col justify-center md:mb-5 mb-3'>
                             <h1 className=" text-center text-[#269C52] rounded-full  font-semibold  lg:text-2xl   text-lg ">
-                                New Paper Submission
+                                Paper Submission
                             </h1>
+                            <p className="mt-4 text-sm md:text-base leading-[30px] text-justify ">
+                                We welcome researchers, academicians, and industry professionals to submit original, high-quality research papers in intelligent systems and computational methods. Each submission will undergo a thorough peer-review process, and accepted papers will be published in the conference proceedings and considered for inclusion in reputable international journals.
+                            </p>
+                            <div className="mt-5">
+                                <p className=" text-[#269C52]  font-semibold  lg:text-2xl  mb-3 text-lg text-start">Registration Guidelines</p>
+                                <p className="text-sm md:text-base leading-[30px] text-justify ">ICISCM-2025 is pleased to offer free registration for all participants, making knowledge-sharing and collaboration accessible to everyone.</p>
+                            </div>
                         </div>
                         <div className='grid lg:grid-cols-1 md:gap-4  gap-4 items-center'>
                             {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6  mx-auto  ">
@@ -173,31 +180,19 @@ function Abstracting() {
                                     </h3>
                                     <ul className="space-y-3 text-sm text-gray-700">
                                         <li className="flex items-start gap-2">
-                                            <span className="text-[#14AE5C]">•</span> Original and unpublished research papers only
+                                            <span className="text-[#14AE5C]">•</span> Enter the details of all authors.
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-[#14AE5C]">•</span> Submit in PDF or DOCX format
+                                            <span className="text-[#14AE5C]">•</span> Accepted formats: PDF or DOCX.
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-[#14AE5C]">•</span> Maximum file size: 10 MB
+                                            <span className="text-[#14AE5C]">•</span> File size must not exceed 10 MB.
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-[#14AE5C]">•</span> Paper should follow the IEEE format
+                                            <span className="text-[#14AE5C]">•</span> Papers must follow the IEEE format.
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-[#14AE5C]">•</span> Include author details on the first page
-                                        </li>
-                                        <li className="flex items-start gap-2">
-                                            <span className="text-[#14AE5C]">•</span> Ensure all author details are correctly filled
-                                        </li>
-                                        <li className="flex items-start gap-2">
-                                            <span className="text-[#14AE5C]">•</span> Upload a PDF or Word document of the paper
-                                        </li>
-                                        <li className="flex items-start gap-2">
-                                            <span className="text-[#14AE5C]">•</span> Only one submission per author will be accepted
-                                        </li>
-                                        <li className="flex items-start gap-2">
-                                            <span className="text-[#14AE5C]">•</span> Follow the formatting guidelines provided
+                                            <span className="text-[#14AE5C]">•</span> Submit only original and unpublished research papers.
                                         </li>
                                     </ul>
                                 </div>
@@ -209,16 +204,19 @@ function Abstracting() {
                                     </h3>
                                     <ul className="space-y-3 text-sm text-gray-700">
                                         <li className="flex items-start gap-2">
-                                            <span className="text-[#14AE5C]">•</span> Verify the accuracy of the contact details before submission.
+                                            <span className="text-[#14AE5C]">•</span> Provide a contact email address.
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-[#14AE5C]">•</span> The first author will be contacted for further correspondence.
+                                            <span className="text-[#14AE5C]">•</span> Ensure contact details are correct.
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-[#14AE5C]">•</span> Submissions must be made before the deadline date.
+                                            <span className="text-[#14AE5C]">•</span> Plagiarism more than 25% will cause rejection.
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-[#14AE5C]">•</span> Late submissions may not be considered for review.
+                                            <span className="text-[#14AE5C]">•</span> Submit before the deadline; late papers not accepted.
+                                        </li>
+                                        <li className="flex items-start gap-2">
+                                            <span className="text-[#14AE5C]">•</span> All papers will be peer-reviewed before publication.
                                         </li>
                                     </ul>
                                 </div>
@@ -271,21 +269,11 @@ function Abstracting() {
                                                         required
                                                         className="shadow-sm bg-white border rounded-md border-gray-200 text-black text-sm focus:ring-primary-500 focus:border-primary-500 block w-full p-2 mt-4"                                                >
                                                         <option value="">Select Track</option>
-                                                        <option  >Intelligent Systems and Applications</option>
-                                                        <option  >Computational Intelligence & Soft Computing</option>
-                                                        <option  >Artificial Intelligence and Knowledge Engineering</option>
-                                                        <option  >Machine Learning and Deep Learning</option>
-                                                        <option  >Data Science and Intelligent Decision Support</option>
-                                                        <option  >Big Data Analytics and Processing</option>
-                                                        <option  >Cybersecurity and Information Assurance</option>
-                                                        <option  >Internet of Things (IoT) and Sensor Networks</option>
-                                                        <option  >Cloud, Edge, and Fog Computing</option>
-                                                        <option  >Robotics, Control Systems, and Automation</option>
-                                                        <option  >Natural Language Processing and Chatbots</option>
-                                                        <option  >Computer Vision and Image Processing</option>
-                                                        <option  >Bioinformatics and Computational Biology</option>
-                                                        <option  >Quantum Computing and Emerging Technologies</option>
-                                                        <option  >Smart Cities, Smart Grid, and Intelligent Environments</option>
+                                                        <option value="Advanced AI & Machine Learning" >Advanced AI & Machine Learning</option>
+                                                        <option value="Intelligent IoT, Edge & Fog Solutions" >Intelligent IoT, Edge & Fog Solutions</option>
+                                                        <option value="Big Data & Cloud-Scale Computing" >Big Data & Cloud-Scale Computing</option>
+                                                        <option value="Blockchain & Trusted Computing" >Blockchain & Trusted Computing</option>
+                                                        <option value="Sustainable & Future-Ready Computing" >Sustainable & Future-Ready Computing</option>
                                                     </select>
                                                 </div>
                                                 <div className="md:col-span-2 mt-5">

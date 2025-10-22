@@ -230,19 +230,37 @@ const Header = () => {
     },
     {
       to: " ",
+      label: "Earlier Conference",
+      dropdown: [
+        {
+          to: "/iciscm-2024",
+          label: "1st ICISCM 2024",
+        },
+      ],
+    },
+    {
+      to: " ",
       label: "Author Desk",
       dropdown: [
+        {
+          to: "/call-for-paper",
+          label: "Call for Paper",
+        },
         {
           to: "/conference-tracks",
           label: "Conference Tracks",
         },
         {
-          to: "/key-dates",
-          label: "Key Dates",
-        },
-        {
           to: "/conference-statistics",
           label: "Conference Statistics",
+        },
+        {
+          to: "/conference-proceedings",
+          label: "Conference Proceedings",
+        },
+        {
+          to: "/key-dates",
+          label: "Key Dates",
         },
         {
           to: "/paper-submission",
@@ -316,14 +334,14 @@ const Header = () => {
   return (
     <>
       <section className="bg-primary">
-        <div className="max-w-[80rem] mx-auto lg:px-5 px-3 lg:py-0 py-2 bg-[#56AE58] border-b-black border-b">
+        <div className="max-w-[80rem] mx-auto xl:px-5 px-3 xl:py-0 py-2 bg-[#56AE58] border-b-black border-b">
           <div className="flex items-center justify-between lg:gap-0 gap-5">
             <Link to='/'>
-              <div className="lg:hidden block">
+              <div className="xl:hidden block">
                 <img className='w-32 h-14 object-contain' src="/assets/Images/ICISCM.png" alt="" />
               </div>
             </Link>
-            <div className={`lg:hidden block ${menuOpen ? "z-50" : ""}`}>
+            <div className={`xl:hidden block ${menuOpen ? "z-50" : ""}`}>
               <Hamburger toggled={menuOpen} color="#fff" toggle={setMenuOpen} />
             </div>
           </div>
@@ -331,25 +349,25 @@ const Header = () => {
       </section>
 
       <section
-        className={`lg:border-b-1 border-b-[#14AE5C] fixed top-0 right-0 h-full w-64 z-40 bg-[#56AE58] ${menuOpen ? "translate-x-0 duration-300" : "translate-x-full duration-300"} lg:block lg:relative lg:w-auto lg:translate-x-0`}
+        className={`lg:border-b-1 border-b-[#14AE5C] fixed top-0 right-0 h-full w-64 z-40  bg-[#56AE58] xl:overflow-visible  overflow-y-scroll overscroll-contain  ${menuOpen ? "translate-x-0 duration-300 " : "translate-x-full duration-300"} xl:block xl:relative xl:w-auto xl:translate-x-0`}
       >
-        <header className="max-w-[100rem] mx-auto lg:px-5 px-2 h-full py-1">
-          <div className="flex lg:justify-between justify-center items-center ">
+        <header className="max-w-[105rem] mx-auto xl:px-5 px-2 h-full py-1">
+          <div className="flex xl:justify-between justify-center items-center ">
             <Link to='/'>
-              <img className='w-32 lg:block hidden h-16 object-contain' src="/assets/Images/ICISCM.png" alt="" />
+              <img className='w-32 xl:block hidden h-16 object-contain' src="/assets/Images/ICISCM.png" alt="" />
             </Link>
             <nav ref={dropdownRef}>
-              <div className={` space-x-1 lg:block max-w-[65rem] mx-auto lg:pt-0 pt-20 ${menuOpen ? "flex flex-col space-y-4" : ""}`}>
+              <div className={` space-x-1 xl:block max-w-[65rem] mx-auto xl:pt-0 pt-20   ${menuOpen ? "flex flex-col space-y-1  " : ""}`}>
                 {navLinks.map((link) => (
                   <div
                     key={link.to}
-                    className="inline-block group relative"
+                    className="inline-block group relative "
                     onMouseEnter={() => handleMouseEnter(link.label)}
                     onMouseLeave={handleMouseLeave}
                   >
                     <Link
                       to={link.to}
-                      className={`py-4 flex lg:w-[144px] lg:w-[130px] transition-all duration-300 ease-in-out lg:text-base lg:text-sm justify-center items-center gap-2 text-white ${isActive(link.to) || hoveredCategory === link.label ? 'lg:border-t-0 border-t-[#14AE5C] duration-300 text-[#1B1F3B]' : ''}`}
+                      className={`py-4 flex  xl:w-[164px]   transition-all duration-300 ease-in-out   xl:text-sm justify-center items-center gap-2 text-white ${isActive(link.to) || hoveredCategory === link.label ? 'lg:border-t-0 border-t-[#14AE5C] duration-300 text-[#1B1F3B]' : ''}`}
                       onClick={(e) => {
                         if (link.dropdown) {
                           e.preventDefault();
@@ -365,12 +383,12 @@ const Header = () => {
                       )}
                     </Link>
                     {hoveredCategory === link.label && link.dropdown && (
-                      <div className="lg:absolute left-0 top-full lg:w-[260px] rounded-lg lg:bg-[#56AE58] bg-white transition-all duration-300 ease-in-out opacity-100 scale-y-100 origin-top grid lg:grid-cols-1 lg:p-3 z-10">
+                      <div className="xl:absolute left-0 top-full xl:w-[260px] rounded-lg xl:bg-[#56AE58] bg-white transition-all duration-300 ease-in-out opacity-100 scale-y-100 origin-top grid xl:grid-cols-1 xl:p-3 z-10 ">
                         {link.dropdown.map((dropdownlink) => (
                           <Link
                             key={dropdownlink.to}
                             to={dropdownlink.to}
-                            className="block lg:px-4 px-4 py-2 lg:text-white lg:text-start text-center text-[#1B1F3B]"
+                            className="block xl:px-4 px-4 py-2 xl:text-white xl:text-start text-center text-[#1B1F3B] "
                             onClick={() => {
                               setHoveredCategory(null);
                               setMenuOpen(false);

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import TeamMemberCard from "./TeamMemberCard";
 import KeyDates from "./KeyDates";
@@ -6,11 +6,49 @@ import LastSection from "../Last/LastSection";
 import Invitees from "./Invitees";
 import Technical from "./Technical";
 import Marquee from "react-fast-marquee";
+import { FaDownload, FaFilePdf } from "react-icons/fa";
+import Proceeding2025 from "../Proceedings/Proceeding2025";
 
 export const Home = () => {
 
   const [activeYear, setActiveYear] = useState("2025");
   const [flipped, setFlipped] = useState(null);
+
+  const [showProceedings2, setShowProceedings2] = useState(false);
+
+  const handleViewProceedings2 = () => {
+    setShowProceedings2(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowProceedings2(false);
+  };
+
+  const handleDownloadPDF = () => {
+    // Replace with the actual path to your PDF file
+    const pdfUrl = '/assets/documents/Proceeding2025.pdf';
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'ICISCM conference_proceedings_2025.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 400) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const item = [
     {
@@ -111,24 +149,16 @@ export const Home = () => {
   ];
 
 
-  const datesData = {
-    "2025": [
-      { Dates: "26-07-2025", Title: "Full Paper Submission Deadline" },
-      { Dates: "31-07-2025", Title: "Notification of Decision" },
-      { Dates: "01-08-2025", Title: "Deadline for Submitting Revised Full Paper" },
-      { Dates: "04-08-2025", Title: "Notification of Acceptance" },
-      { Dates: "08-08-2025", Title: "Last Date for Registration" },
-      { Dates: "13-08-2025", Title: "Conference Dates" },
-    ],
-    "2024": [
-      { Dates: "20-06-2024", Title: "Full Paper Submission Deadline" },
-      { Dates: "24-06-2024", Title: "Notification of Decision" },
-      { Dates: "28-06-2024", Title: "Deadline for Submitting Revised Full Paper" },
-      { Dates: "02-07-2024", Title: "Notification of Acceptance" },
-      { Dates: "07-07-2024", Title: "Last Date for Registration" },
-      { Dates: "10-07-2024", Title: "Conference Dates" },
-    ],
-  };
+  const date2025 = [
+
+    { Dates: "28-01-2025", Title: "Abstract Submission" },
+    { Dates: "12-02-2025", Title: "Abstract Acceptance Date" },
+    { Dates: "03-03-2025", Title: "Full Paper Submission" },
+    { Dates: "09-06-2025", Title: "Acceptance Notifications" },
+    { Dates: "21-07-2025", Title: "Registration Deadline / Final Paper" },
+    { Dates: "13-08-2025", Title: "Conference Date" },
+  ]
+
 
   const imageItems = [
     { src: '/assets/Images/associates/1.png', },
@@ -149,25 +179,81 @@ export const Home = () => {
       <div className="overflow-hidden">
         <section className="relative lg:h-[calc(100dvh-30px)] w-full overflow-hidden">
           <div className="absolute top-0 left-0 h-full w-full bg-[#269C53] z-0 clip-md"></div>
-          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 h-full max-w-[100rem] gap-10 lg:py-0 py-10 mx-auto items-center px-4">
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 h-full max-w-[100rem] gap-10 lg:py-0 py-10 mx-auto items-center px-4 lg:mt-0 mt-12">
             <div className="flex justify-center items-center ">
               <img src="/assets/Images/pik.png" alt="Conference" rel="preload" className="rounded-xl  mx-auto lg:w-full w-96" />
             </div>
-            <div className=" lg:ml-auto mx-auto flex flex-col gap-6">
+            <div className=" lg:ml-auto mx-auto flex flex-col gap-4">
               <h2 className="lg:text-[#269C53] md:text-2xl font-bold text-center   text-white">ICISCM</h2>
               <h1 className="text-2xl xl:text-5xl lg:text-3xl font-bold leading-snug text-center  lg:text-black text-white">
-                International Conference on  Intelligent Systems and  Computational Methods
+                2<sup>nd</sup>  International Conference on  Intelligent Systems and  Computational Methods
               </h1>
-              <div className="text-center">
-                <Link to="/paper-submission">
-                  <button className="lg:bg-[#269C53] bg-white lg:text-white font-semibold  text-[#269C53] px-6 py-2 rounded lg:hover:bg-green-700 transition cursor-pointer">
-                    Register Now
-                  </button>
-                </Link>
+              <div>
+                <div className="flex sm:flex-row flex-col gap-2 sm:gap-5 justify-center text-center mb-3">
+                  <p className="text-white lg:text-gray-800"><span className="font-medium text-lg">Date:</span> 13<sup>th</sup> August 2025</p>
+                  <p className="text-white lg:text-gray-800"><span className="font-medium text-lg">Mode:</span> Hybrid (Online & On-Site)</p>
+                </div>
+                <div className="text-center">
+                  <Link to="/paper-submission">
+                    <button className="lg:bg-[#269C53] bg-white lg:text-white font-semibold  text-[#269C53] px-6 py-2 rounded lg:hover:bg-green-700 transition cursor-pointer">
+                      Register Now
+                    </button>
+                  </Link>
+                </div>
               </div>
+
             </div>
           </div>
+
+          <div className={`flex lg:justify-end justify-end lg:gap-2 gap-2  lg:px-5 px-2 md:rounded-lg right-0   pt-5 pb-3 fixed md:w-fit w-full z-10 transition-all duration-300 ${scrolled ? "   bg-white shadow-md py-2 md:top-[5%] xl:top-[9%] 2xl:top-[7.5%]  lg:top-[7.5%] top-[6%]" : "bg-transparent  md:top-[6%] xl:top-[10%] 2xl:top-[8.5%]  lg:top-[8%] top-[7%] "}`} >
+            <button
+              className="group mt-4.5  lg:mt-0 relative bg-gradient-to-br from-[#269C53] via-[#269C53] to-[#269C53] w-fit lg:p-3 p-1 lg:px-4 px-3 py-2 lg:rounded-xl rounded-lg flex text-[15px] font-medium cursor-pointer items-center gap-3 shadow-lg shadow-[#269C53]/50 hover:shadow-2xl hover:shadow-[#269C53]/60 transition-all duration-300 hover:scale-105 active:scale-95 overflow-hidden"
+              onClick={handleViewProceedings2}
+            >
+              <span className="absolute  inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
+              <FaFilePdf className="flex shrink-0 text-[20px] drop-shadow-lg text-white relative z-10 group-hover:rotate-12 transition-transform duration-300" />
+              <span className="relative z-10 text-white drop-shadow-md font-medium">Proceedings - 2025</span>
+            </button>
+
+            <button
+              className="group relative mt-4.5  lg:mt-0 font-bold flex items-center gap-4 cursor-pointer bg-gradient-to-br from-[#269C53] via-[#269C53] to-[#269C53] lg:p-3 p-1 lg:px-4 px-3 py-2 lg:rounded-xl rounded-lg shadow-lg   hover:shadow-2xl hover:shadow-[#269C53]/60 transition-all duration-300 hover:scale-105 active:scale-95 overflow-hidden"
+              onClick={handleDownloadPDF}
+            >
+              <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
+              <FaDownload className='flex shrink-0 lg:text-xl text-lg text-white drop-shadow-lg relative z-10 animate-bounce' />
+            </button>
+          </div>
+          {showProceedings2 && (
+            <div className="fixed inset-0 bg-black/70  flex items-center justify-center z-50">
+              <div className="bg-white rounded-lg shadow-lg max-w-[1450px] w-full mx-2 lg:mx-0 max-h-[90vh] overflow-y-auto">
+                {/* Modal Header */}
+                <div className="flex justify-end md:gap-10 gap-5 items-center p-4 border-b">
+                  <button className="text-xl text-gray-700 hover:text-gray-900 font-semibold flex items-center gap-4 cursor-pointer" onClick={handleDownloadPDF}>Download <FaDownload className='flex shrink-0' /></button>
+                  <button
+                    className="text-gray-700 hover:text-gray-900 text-2xl cursor-pointer"
+                    onClick={handleCloseModal}
+                  >
+                    &times;
+                  </button>
+                </div>
+                <div className="lg:p-4 ">
+                  <Proceeding2025 />
+                </div>
+
+                <div className="flex justify-end p-4 border-t">
+                  <button
+                    className="bg-[#269C53] text-gray-50 p-2 px-4 rounded-lg hover:bg-gray-400 cursor-pointer"
+                    onClick={handleCloseModal}
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
         </section>
+
+
         <section className="bg-[#A6D8A7]">
           <section className="max-w-[90rem] pt-5 md:pt-10 mx-auto md:px-5 px-3">
             <section className="grid md:grid-cols-2 grid-cols-1 md:gap-5 gap-3 items-start">
@@ -175,15 +261,14 @@ export const Home = () => {
                 <h1 className="text-center w-fit mx-auto rounded-full   font-semibold lg:text-2xl text-lg">
                   About the Conference
                 </h1>
-                <p className="text-justify md:text-base text-sm leading-7">Step into the future of intelligent technologies at the International Conference on Intelligent Systems and Computational Methods.
-                  This premier global event unites researchers, academicians, industry experts, and students to explore innovative ideas, emerging trends, and practical applications in intelligent systems and computational techniques. ICISCM serves as a dynamic platform for presenting cutting-edge research, exchanging knowledge, and fostering collaborations that drive advancements in automation, machine learning, optimization, and real-world problem solving through computational intelligence. </p>
+                <p className="text-justify md:text-base text-sm leading-7">The International Conference on Intelligent Systems and Computational Methods (ICISCM) is dedicated to fostering interdisciplinary collaboration and advancing cutting-edge research in data-driven and computational technologies. It offers a dynamic platform to explore emerging challenges, share innovative solutions, and discuss future directions across a broad spectrum of fields, including artificial intelligence, machine learning, the Internet of Things (IoT), edge and fog computing, cybersecurity, and advanced data analytics. ICISCM 2025 highlights the latest innovations, research breakthroughs, and practical applications in intelligent systems and computational methods.</p>
               </div>
               <div className=" flex flex-col md:gap-4 gap-2">
                 <h1 className="text-center w-fit mx-auto rounded-full   font-semibold lg:text-2xl text-lg">
                   Scope of Conference
                 </h1>
                 <p className="text-justify md:text-base text-sm leading-7">
-                  Join us at the International Conference on Intelligent Systems and Computational Methods — a premier forum that brings together a global community of researchers, academicians, industry professionals, and students to delve into the latest developments in intelligent technologies and computational strategies. This event is designed to foster impactful collaborations, encourage innovative thinking, and highlight pioneering research that addresses theoretical foundations and real-world applications across areas such as machine learning, optimization, data analytics, automated decision-making, and complex system modeling.
+                  The International Conference on Intelligent Systems and Computational Methods (ICISCM) is committed to fostering interdisciplinary research and innovation in intelligent technologies and advanced computational methods. The conference serves as a dynamic platform to explore emerging challenges, present novel solutions, and discuss future directions across diverse areas such as artificial intelligence, machine learning, Internet of Things (IoT), edge and fog computing, cybersecurity, and data analytics. ICISCM 2025 unites researchers, academicians, and industry experts to exchange knowledge, cultivate collaboration, and accelerate innovation in designing intelligent, adaptive, and high-performance systems.
                 </p>
               </div>
             </section>
@@ -197,6 +282,8 @@ export const Home = () => {
             </div>
           </section>
         </section>
+
+
         <section className="bg-white">
           <section className="max-w-[90rem] pt-5 md:pt-10 mx-auto md:px-5 px-3">
             <section className="grid md:grid-cols-1 grid-cols-1 md:gap-5 gap-3 items-start">
@@ -225,6 +312,8 @@ export const Home = () => {
 
           </section>
         </section>
+
+
         <section className="max-w-[100rem]  mx-auto pt-10 md:pt-10 flex flex-col md:gap-10  gap-10">
           {/* <section className="  max-w-[70rem]   mx-auto md:px-5 px-3  flex flex-col md:gap-5 gap-3">
           <h1 className=" text-center font-semibold lg:text-2xl text-lg">
@@ -246,27 +335,16 @@ export const Home = () => {
             ))}
           </div>
         </section> */}
+
+
           <section className="   md:px-5 px-3 ">
             <div className="  bg-[#A6D8A7] md:p-10 p-5 rounded-3xl shadow-xl  flex flex-col md:gap-5 gap-3">
               <h1 className="text-center mx-auto font-semibold lg:text-2xl text-lg ">
                 Key Dates
               </h1>
-              <div className=" mt-4 px-5">
-
-                <div className="flex justify-center gap-4 mb-8">
-                  {Object.keys(datesData).map((year) => (
-                    <button
-                      key={year}
-                      onClick={() => setActiveYear(year)}
-                      className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 cursor-pointer ${activeYear === year ? "bg-green-600 text-white shadow-md scale-105" : "bg-gray-100 text-gray-700 hover:bg-gray-200"}`}
-                    >
-                      {year}
-                    </button>
-                  ))}
-                </div>
-
+              <div className="  px-5">
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-10 gap-5 mt-5">
-                  {datesData[activeYear].map((item, index) => (
+                  {date2025.map((item, index) => (
                     <KeyDates key={index} Dates={item.Dates} Title={item.Title} />
                   ))}
                 </div>

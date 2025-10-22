@@ -18,6 +18,9 @@ import ContactPage from "../Components/ContactPage/ContactPage";
 import EditorialPage from "../Components/EditorialPage/EditorialPage";
 import IssuePage from "../Components/IssuePage/IssuePage";
 import Statisticspage from "../Components/Statisticspage/Statisticspage";
+import Callforpaperpage from "../Components/Callforpaperpage/Callforpaperpage";
+import Proceeding2025page from "../Components/Proceedingpage/Proceeding2025page";
+import ICISCM2024page from "../Components/ICISCM2024page/ICISCM2024page";
 
 
 function Approuter() {
@@ -36,14 +39,10 @@ function Approuter() {
             <Route path="/conference-tracks" element={<PeerPage />} />
             <Route path="/key-dates" element={<PublicationPage />} />
             <Route path="/conference-statistics" element={<Statisticspage />} />
-            {/* <Route path="/author-guidelines" element={<GuidelinePage />} />
-            <Route path="/article-processing" element={<ArticlePage />} />
-            <Route path="/plagiarism" element={<PlagiarismPage />} />
-            <Route path="/malpractice" element={<MalPracticePage />} />
-            <Route path="/correction" element={<CorrectionPage />} />
-            <Route path="/publication-policy" element={<PublicRightsPage />} />
-            <Route path="/copyrights" element={<CopyrightsPage />} /> */}
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/call-for-paper" element={<Callforpaperpage />} />
+            <Route path="/conference-proceedings" element={<Proceeding2025page />} />
+            <Route path="/iciscm-2024" element={<ICISCM2024page />} />
           </Route>
         </Routes>
       </BrowserRouter>

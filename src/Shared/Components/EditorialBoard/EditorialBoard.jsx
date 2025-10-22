@@ -589,7 +589,7 @@ function EditorialBoard({ position, Name, location, name, department, university
             <section className="flex flex-col md:gap-5 gap-3 max-w-[90rem]  md:px-5 px-3 mx-auto  md:py-10 py-5" >
                 <div className='flex flex-col gap-3 '>
                     <h1 className="text-center text-[#269C52] font-semibold lg:text-2xl text-lg">
-                        Organizing Committee
+                       Editorial Board
                     </h1>
                     <p className=" md:text-base text-sm text-justify leading-[30px]"> Our conference is led by a dedicated team of professionals and academicians from diverse institutions and research backgrounds, working together to ensure a high-quality, impactful, and smooth conference experience.
                     </p>

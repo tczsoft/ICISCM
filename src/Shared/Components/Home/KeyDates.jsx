@@ -22,7 +22,7 @@ import React from 'react';
 function KeyDates({ Dates, Title }) {
     return (
         <section className="relative bg-white p-4 rounded-xl shadow-lg group transition-transform hover:scale-[1.02] overflow-hidden">
-            <div className="flex items-center gap-5 z-10 relative  h-full ">
+            <div className="flex items-center gap-5  relative  h-full ">
                 <div className="  text-[#1B1F3B] font-semibold p-5 bg-[#269C52] rounded-full text-sm md:text-base  whitespace-nowrap">
                     <i className="fi fi-sr-calendar flex items-center text-white text-3xl"></i>
                 </div>
