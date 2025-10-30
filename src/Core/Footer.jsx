@@ -34,8 +34,12 @@ const Footer = () => {
               </div>
               <div className="text-center md:text-left mx-auto">
                 <h4 className="text-lg font-semibold mb-2">Contact</h4>
-                <ul className="space-y-1 text-sm">
-                  <li>Email: <a href="mailto:info.iciscm@gmail.com" className="underline">info.iciscm@gmail.com</a></li>
+                <ul className="space-y-2 text-sm">
+                  <div className='space-y-1'>
+                    <li><a href="mailto:info@iciscm.com" className="underline">info@iciscm.com</a></li>
+                    <li><a href="mailto:info.iciscm@gmail.com" className="underline">info.iciscm@gmail.com</a></li>
+                  </div>
+
                   <li>Location: Jakarta, Indonesia</li>
                 </ul>
               </div>

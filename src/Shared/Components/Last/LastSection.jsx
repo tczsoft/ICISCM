@@ -19,29 +19,33 @@ function LastSection() {
                             </div>
                             <div className="bg-[#269C53] md:p-10 p-5 w-full h-full transform -skew-x-12 rounded-xl">
                                 <div className="transform skew-x-12 flex flex-col gap-5">
-                                 <div className="items-center xl:text-5xl md:text-3xl flex justify-end"> < GiMicrophone className=" "/></div>  
+                                    <div className="items-center xl:text-5xl md:text-3xl flex justify-end"> < GiMicrophone className=" " /></div>
                                     <p className="xl:text-2xl text-center">International Conference on Intelligent Systems and Computational Methods</p>
                                 </div>
                             </div>
                             <div className="bg-[#269C53] md:p-10 p-5 w-full h-full transform -skew-x-12 rounded-xl ">
                                 <div className="transform skew-x-12 flex flex-col gap-5">
                                     <i className="fi fi-sr-envelope items-center xl:text-5xl md:text-3xl  flex justify-end"></i>
-                                    <p className="xl:text-2xl">info.iciscm@gmail.com
-                                        {/* <br/> +91 1234567890 */}
-                                    </p>
-                                </div>
+                                    <div>
+                                        <p className="xl:text-2xl mb-1">info@iciscm.com</p>
+                                        <p className="xl:text-2xl">info.iciscm@gmail.com </p>
+                                    </div>
+
+                                    {/* <br/> +91 1234567890 */}
+                               
                             </div>
                         </div>
-                        <div className='w-fit mx-auto'>
-                            <Link to="/paper-submission">
-                                <div className="bg-white p-4 w-fit text-[#56AE58] px-6 rounded-md mx-auto cursor-pointer font-bold hover:scale-105 duration-300 md:text-base text-sm">
-                                    Register Now
-                                </div>
-                            </Link>
+                </div>
+                <div className='w-fit mx-auto'>
+                    <Link to="/paper-submission">
+                        <div className="bg-white p-4 w-fit text-[#56AE58] px-6 rounded-md mx-auto cursor-pointer font-bold hover:scale-105 duration-300 md:text-base text-sm">
+                            Register Now
                         </div>
-                    </section>
+                    </Link>
                 </div>
             </section>
+        </div >
+            </section >
         </>
     )
 }
