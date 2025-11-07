@@ -355,7 +355,7 @@ export const Home = () => {
 
           <section className="md:px-5 px-3 ">
             <div className="  bg-[#A6D8A7] md:p-10 p-5 rounded-3xl shadow-xl   ">
-              <h1 id="keyinvitees" className="scroll-mt-28 text-center mx-auto font-semibold lg:text-2xl text-lg ">
+              <h1 id="keyinvitees" className="sm:scroll-mt-28 scroll-mt-36 text-center mx-auto font-semibold lg:text-2xl text-lg ">
                 Key Invitees
               </h1>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6   mx-auto">
