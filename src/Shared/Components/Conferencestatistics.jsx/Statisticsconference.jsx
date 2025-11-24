@@ -182,12 +182,12 @@ function Statisticsconference() {
 
                     <div className='lg:order-2 order-1'>
                         <p className="md:text-lg text-base mb-8 text-justify">
-                            For demonstrating a pioneering approach that accelerates drug candidate screening through the integration of deep learning and molecular simulations, we proudly present the Best Paper Award of ICISCM-2025 to:
+                            For demonstrating an innovative and impactful approach that accelerates precision bioengineering in agriculture through the integration of machine learning and biological data analysis, we proudly present the Best Paper Award of ICISCM-2025 to:
                         </p>
 
                         <div className="  space-y-8">
                             <h3 className="md:text-xl text-lg font-bold text-[#1B1F3B] mt-1">
-                                “DEEP LEARNING AND MOLECULAR DOCKING INTEGRATION FOR ACCELERATED DRUG CANDIDATE SCREENING”
+                                “A Machine Learning-Driven Approach to Precision Bioengineering in Agriculture: Opportunities and Challenges”
                             </h3>
                             <p className=" text-base text-center">
                                 Authored by{" "} <br />
@@ -203,7 +203,7 @@ function Statisticsconference() {
 
             </section>
             <p className="mt-6 md:text-base text-sm text-justify leading-[30px] max-w-[90rem] mx-auto  md:px-5 px-3  pb-10">
-                The outstanding research paper “DEEP LEARNING AND MOLECULAR DOCKING INTEGRATION FOR ACCELERATED DRUG CANDIDATE SCREENING” integrates deep learning techniques with molecular docking to speed up the identification of potential drug candidates. This approach uses AI models to predict interactions between molecules and target proteins efficiently. By combining computational intelligence with molecular simulations, it accelerates the drug discovery process. This method aims to reduce experimental costs and improve the success rate of finding effective therapeutics.
+                The outstanding research paper “A MACHINE LEARNING-DRIVEN APPROACH TO PRECISION BIOENGINEERING IN AGRICULTURE: OPPORTUNITIES AND CHALLENGES” introduces an innovative framework that applies machine learning to enhance genetic analysis, trait prediction, and crop improvement. By integrating AI models with modern bioengineering techniques, the study accelerates the identification of beneficial traits, reduces experimental efforts, and supports smarter, data-driven agricultural innovation.
             </p>
 
 
